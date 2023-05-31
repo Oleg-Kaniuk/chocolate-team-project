@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* FONT */
+
+  --primary-font: 'Montserrat', sans-serif;
+
+  /* MAIN TEXT-COLOR */
+
+  --main-dark-text-color: #111111;
+  --main-light-text-color: #ffffff;
+  --additional-text-color: rgba(255, 255, 255, 0.7);
+
+  /* OTHER TEXT-COLOR */
+
+  --slider-text-color: rgba(17, 17, 17, 0.7);
+  --accent-text-color: #fd9222;
+  --forms-text-color: #000000;
+  --placeholder-text-color: rgba(64, 64, 64, 0.3);
+
+  /* BACKGROUND-COLOR */
+
+  --primary-bg-color: #fafafa;
+  --secondary-bg-color: #1e1823;
+  --reserve-bg-color: #fd9222;
+  --additional-bg-color: #ffffff;
+
+  /* ACCENT-COLOR */
+
+  --primary-accent-color: #fd9222;
+  --secondary-accent-color: #fcf1e0;
+
+  /* ICONS-COLOR */
+
+  --hover-icons-color: #fd9222;
+  --default-icons-color: #111111;
+
+  /* TRANSITION */
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: var(--primary-font);
+  letter-spacing: 0.02em;
+  color: var(--main-dark-text-color);
+  background-color: var(--primary-bg-color);
+}

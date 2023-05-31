@@ -1,0 +1,184 @@
+/* =============================================================================================
+================================================================================================
+================================================================================================ */
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/* =============================================================================================
+================================================================================================
+================================================================================================ */
+
+/* logotype */
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+
+  letter-spacing: -0.03em;
+  color: var(--main-dark-text-color);
+}
+
+/* styles for link in header and footer */
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* h2 in the section and modal windows */
+
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-dark-text-color);
+}
+
+/* for SPAN with class .title-accent */
+
+.title-accent {
+  color: var(--accent-text-color);
+}
+
+/* h2 in the footer */
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+
+  color: var(--main-light-text-color);
+}
+
+/* h3 in the hero-section */
+
+.hero-subtitle {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+
+  letter-spacing: -0.03em;
+
+  color: var(--main-light-text-color);
+}
+
+/* h3 in the section and overlay */
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+
+  color: var(--main-dark-text-color);
+}
+
+/* p in the section and overlay */
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: var(--main-dark-text-color);
+}
+
+/* p in the slider */
+
+.slider-text {
+  font-size: 14px;
+  line-height: 1.29;
+
+  text-align: center;
+  color: var(--slider-text-color);
+}
+
+/* p or span in the forms as label text */
+
+.label-input-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: var(--forms-text-color);
+}
+
+/* p as placeholder text and text inside input */
+
+.placeholder-text,
+.input-text {
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+/* p in the mobile-menu */
+
+.mobile-menu-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--main-light-text-color);
+}
+
+/* button in modal windows and hero-section */
+
+.modal-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: var(--main-light-text-color);
+  background-color: var(--reserve-bg-color);
+}
+
+/* button in the section */
+
+.section-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: var(--main-light-text-color);
+  background-color: var(--reserve-bg-color);
+}
+
+/* button in the overlay */
+
+.overlay-btn {
+  font-size: 10px;
+  line-height: 1.2;
+
+  color: var(--main-light-text-color);
+  background-color: var(--reserve-bg-color);
+}
