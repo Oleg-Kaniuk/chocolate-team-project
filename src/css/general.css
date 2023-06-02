@@ -62,8 +62,8 @@
 
 .section-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
 
   text-align: center;
   letter-spacing: -0.03em;
@@ -82,18 +82,18 @@
 
 .footer-title {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
+  font-size: 24px;
+  line-height: 1.17;
 
   color: var(--main-light-text-color);
 }
 
-/* h3 in the hero-section */
+/* h2 in the hero-section */
 
-.hero-subtitle {
+.hero-title {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
+  font-size: 20px;
+  line-height: 1.2;
 
   letter-spacing: -0.03em;
 
@@ -133,8 +133,8 @@
 
 .label-input-text {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
+  font-size: 12px;
+  line-height: 1.17;
 
   color: var(--forms-text-color);
 }
@@ -143,8 +143,8 @@
 
 .placeholder-text,
 .input-text {
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.21;
 }
 
 /* p in the mobile-menu */
@@ -172,8 +172,8 @@
 
 .section-btn {
   font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.21;
 
   color: var(--main-light-text-color);
   background-color: var(--reserve-bg-color);
