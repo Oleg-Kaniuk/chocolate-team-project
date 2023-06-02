@@ -1,0 +1,125 @@
+.header-div {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .header-div {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header-div {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}
+/* logo and icon */
+.header-logo {
+  width: 21px;
+  max-height: 21px;
+}
+@media only screen and (min-width: 1200px) {
+  .header-logo {
+    width: 28px;
+    max-height: 24px;
+  }
+}
+.header-icon-messeng {
+  fill: transparent;
+  stroke: var(--main-dark-text-color);
+  width: 24px;
+  max-height: 24px;
+}
+.header-icon-messeng:hover,
+.header-icon-messeng:focus {
+  stroke: var(--accent-text-color);
+}
+.header-burger-menu {
+  width: 25px;
+  max-height: 28px;
+}
+@media only screen and (min-width: 768hpx) {
+  .header-burger-menu {
+    width: 28px;
+    max-height: 32px;
+  }
+}
+.butto-open-mobile {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  width: 28px;
+  max-height: 28px;
+}
+@media only screen and (min-width: 768px) {
+  .butto-open-mobile {
+    width: 32px;
+    max-height: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .butto-open-mobile {
+    display: none;
+  }
+}
+/* desktop list heder */
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  max-height: 24px;
+  width: 1136px;
+}
+/* link */
+.header-link {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+@media only screen and (min-width: 1200px) {
+  .header-link {
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header-link {
+    margin-right: 190px;
+  }
+}
+.header-nav-link {
+  color: var(--main-dark-text-color);
+  letter-spacing: -0.02em;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-text-color);
+}
+.header-icon-link {
+  display: block;
+  max-height: 24px;
+}
+/* list */
+.header-list {
+  display: none;
+  column-gap: 24px;
+  margin-right: auto;
+}
+@media only screen and (min-width: 1200px) {
+  .header-list {
+    display: flex;
+  }
+}
+.header-list-messeng {
+  display: none;
+  column-gap: 18px;
+}
+@media only screen and (min-width: 1200px) {
+  .header-list-messeng {
+    display: flex;
+  }
+}
