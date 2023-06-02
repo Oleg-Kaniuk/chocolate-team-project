@@ -1,5 +1,6 @@
 import './js/gotop'
 import './js/burger-menu'
 import './js/modal'
+import './js/video-player'
 import './js/slider-choco'
 import './js/slider-reviews'
