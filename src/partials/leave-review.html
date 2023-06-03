@@ -1,21 +1,18 @@
-<div>
-    <button type="button">
-        <svg class="" width="28" height="28">
-            <use href=""></use>
+<div class="backdrop is-hidden hero-modal" data-modal-review>
+    <button type="button" class="hero-modal-close-btn" data-modal-close-review>
+        <svg class="hero-modal-close-icon" width="28" height="28">
+            <use href="../img/choco-icons.svg#icon-x-close-small"></use>
         </svg>
     </button>
     <form>
-
         <h2>LEAVE A REVIEW ABOUT OUR CHOCOLATE</h2>
         <input name="user_name" type="text" placeholder="Name">
         <input name="user_e-mail" type="email" placeholder="Email">
         <div><input name="user_phone_number" type="number" placeholder="Phone number">
-            <svg class="" width="32" height="32">
-                <use href=""></use>
-            </svg>
+            <img src="../img/ukraine.svg" alt="flag">
             <span>+380</span>
         </div>
         <textarea name="text_input" placeholder="Enter text"></textarea>
     </form>
-    <button type="submit">Send</button>
+    <button type="submit" class="modal-btn">Send</button>
 </div>
