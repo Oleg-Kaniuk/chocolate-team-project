@@ -4,7 +4,7 @@
   right: 0;
   display: flex;
   flex-direction: column;
-  width: 56vw;
+  width: 220px;
   height: 100vh;
   padding: 20px;
   padding-top: 136px;
@@ -12,8 +12,100 @@
   z-index: 999;
 
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: var(--transition-dur-and-func);
 }
-.modal-mobile-menu.is-open {
+.modal-mobile-menu.is-hidden {
   transform: translateX(0);
+}
+/* close button */
+.close-button-mobile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 28px;
+  max-height: 28px;
+  padding: 0;
+  border: none;
+  stroke: var(--main-light-text-color);
+  background-color: var(--secondary-bg-color);
+}
+.close-button-mobile:hover,
+.close-button-mobile:focus {
+  stroke: var(--accent-text-color);
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+.mobile-icon-close {
+  width: 28px;
+  height: 28px;
+}
+.mobile-icon-close:hover,
+.mobile-icon-close:focus {
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+/* navigation list */
+.modal-mobile-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-left: 30px;
+  margin-bottom: auto;
+}
+.mobile-menu-link {
+  position: relative;
+  letter-spacing: -0.02em;
+}
+.mobile-menu-line:hover:after,
+.mobile-menu-line:focus:after {
+  position: absolute;
+  background-color: var(--accent-text-color);
+  content: '';
+  display: block;
+  border: 1px solid #fd9222;
+  transition: var(--transition-dur-and-func);
+  bottom: -8px;
+  left: 0;
+  width: 24px;
+}
+.mobile-menu-link:focus,
+.mobile-menu-link:hover {
+  color: var(--accent-text-color);
+  font-weight: 600;
+  transition: var(--transition-dur-and-func);
+}
+.mobile-menu-icon-list {
+  display: flex;
+  column-gap: 18px;
+}
+.mobile-menu-icon-svg {
+  width: 22px;
+  max-height: 22px;
+  stroke: var(--main-light-text-color);
+  fill: transparent;
+}
+.mobile-menu-icon-svg:focus,
+.mobile-menu-icon-svg:hover {
+  stroke: var(--accent-text-color);
+  transition: var(--transition-dur-and-func);
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .modal-mobile-menu {
+    width: 290px;
+    padding: 24px 32px;
+    padding-top: 156px;
+  }
+  .modal-mobile-list {
+    margin-left: 53px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 1200px) {
+  .modal-mobile-menu {
+    display: none;
+  }
 }
