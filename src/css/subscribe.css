@@ -97,8 +97,7 @@
 @media only screen and (min-width: 768px) {
     .subscribe-btn {
         font-size: 18px;
-        line-height: 1.22;
         padding: 14px 40px;
-
+        line-height: 1.22;
     }
 }
