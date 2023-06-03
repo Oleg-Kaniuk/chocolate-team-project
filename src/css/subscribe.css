@@ -1,24 +1,26 @@
 .subscribe-container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-mobile@1x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 62px 20px;
-    width: 100%;
+    padding-top: 62px;
+    padding-bottom: 63px;
+    /* width: 100%; */
 }
 
 @media only screen and (min-width: 320px) {
     .subscribe-container {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
             url(../img/subscribe/subcribe-mobile@1x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .subscribe-container {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
                 url(../img/subscribe/subcribe-mobile@2x.jpg);
         }
     }
@@ -26,15 +28,17 @@
 
 @media only screen and (min-width: 768px) {
     .subscribe-container {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-tablet@1x.jpg);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-tablet@1x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        padding-top: 72px;
+        padding-bottom: 72px;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero {
+        .subscribe-container {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
                 url(../img/subscribe/subcribe-tablet@2x.jpg);
         }
@@ -44,7 +48,7 @@
 
 @media only screen and (min-width: 1200px) {
     .subscribe-container {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe@1x.jpg);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe@1x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -52,7 +56,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero {
+        .subscribe-container {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
                 url(../img/subscribe/subcribe@2x.jpg)
         }
@@ -60,22 +64,18 @@
 }
 
 .subscribe-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    color: #FFFFFF;
-    text-align: center;
+    color: var(--main-light-text-color);
     margin-bottom: 24px;
 }
 
+
+
+
 .subscribe-subtitle {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--main-light-text-color);
     margin-bottom: 24px;
 }
 
@@ -92,4 +92,13 @@
     padding: 12px 28px;
     border: none;
     border-radius: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .subscribe-btn {
+        font-size: 18px;
+        line-height: 1.22;
+        padding: 14px 40px;
+
+    }
 }
