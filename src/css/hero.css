@@ -1,0 +1,198 @@
+.hero-section {
+    padding-top: 395px;
+    padding-bottom: 21px;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 71px;
+    border-radius: 30px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-mobile@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-tablet@1x.jpg);
+        padding-top: 671px;
+        padding-bottom: 40px;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-tablet@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate@1x.jpg);
+        padding-top: 381px;
+        padding-bottom: 40px;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .hero-title {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width:767px) {
+    .hero-title {
+        font-size: 20px;
+        line-height: 1.2;
+        width: 290px;
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-title {
+        width: 484px;
+        margin-bottom: 32px;
+        font-size: 28px;
+        line-height: 1.21;
+    }
+}
+
+.hero-modal-btn {
+    padding: 8px 16px;
+    margin-right: 14px;
+    border-radius: 100px;
+    border: none;
+}
+
+@media only screen and (min-width: 375px) {
+    .hero-modal-btn {
+        padding: 12px 28px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-modal-btn {
+        padding: 14px 40px;
+    }
+}
+
+.hero-modal-btn:hover,
+.hero-modal-btn:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--reserve-bg-color);
+}
+
+.hero-made-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    padding: 8px 14px;
+    color: var(--main-light-text-color);
+    border: 1px solid var(--main-light-text-color);
+    border-radius: 100px;
+}
+
+@media only screen and (min-width: 375px) {
+    .hero-made-btn {
+        padding: 12px 28px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-made-btn {
+        padding: 14px 40px;
+    }
+}
+
+.hero-made-btn:hover,
+.hero-made-btn:focus {
+    border-color: var(--reserve-bg-color);
+    color: var(--accent-text-color);
+}
+
+.scroll-icon-small {
+    background-color: var(--additional-bg-color);
+    fill: var(--accent-text-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .scroll-icon-small {
+        display: none;
+    }
+}
+
+.scroll-icon-large {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .scroll-icon-large {
+        display: block;
+        border-radius: 50%;
+        background-color: var(--additional-bg-color);
+        fill: var(--accent-text-color);
+    }
+}
+
+.scroll-down-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    color: var(--main-light-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .scroll-down-text {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .scroll-down-link {
+        width: 107px;
+        margin-top: 39px;
+        display: flex;
+        gap: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .scroll-down-link {
+        display: flex;
+        width: 130px;
+        gap: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .test {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .scroll-down {
+        display: block;
+        margin-left: auto;
+    }
+}
