@@ -1,17 +1,46 @@
 <section>
-    <div class="container">
+    <div class="top-container container">
         <h2 class="top-sellers-title">TOP <span class="sellers-span">SELLERS</span></h2>
         <ul class="top-list list">
             <li class="top-item">
-                <img src="" alt="">
+                <picture>
+                    <!-- Desktop -->
+                    <source media="(min-width: 1200px)"
+                        srcset="../img/top_sellers/choco_one@1x.jpg 1x, ../img/top_sellers/choco_one@2x.jpg 2x">
+                    <!-- Tablet -->
+                    <source media="(min-width: 768px)"
+                        srcset="../img/top_sellers/choco-one-tablet@1x.jpg 1x, ../img/top_sellers/choco-one-tablet@2x.jpg 2x">
+                    <!-- Mobile -->
+                    <source media="(max-width: 767px)"
+                        srcset="../img/top_sellers/choco-one-mobile@1x.jpg 1x, ../img/top_sellers/choco-one-mobile@2x.jpg 2x">
+                    <img class="top-icon" src="../img/top_sellers/choco-one-mobile@1x.jpg" alt="Dark chocolate with hazelnuts">
+                </picture>
                 <p class="top-paragraph">Crazy enough chocolate originates from a bean just like the coffee bean called
                     Cacao. Cacao has been around for
                     thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
             </li>
             <li class="top-item">
-                <img src="" alt="">
-                <button type="submit" class="top-button">Buy now</button>
+                <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1200px)"
+                    srcset="../img/top_sellers/choco_two@1x.jpg 1x, ../img/top_sellers/choco_two@2x.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)"
+                    srcset="../img/top_sellers/choco-two-tablet@1x.jpg 1x, ../img/top_sellers/choco-two-tablet@2x.jpg 2x">
+                <!-- Mobile -->
+                <source media="(max-width: 767px)"
+                    srcset="../img/top_sellers/choco-two-mobile@1x.jpg 1x, ../img/top_sellers/choco-two-mobile@2x.jpg 2x">
+                <img class="top-icon"  src="../img/top_sellers/choco-two-mobile@1x.jpg" alt="Milk chocolate with nuts">
+                </picture>
             </li>
-        </ul>
+                <li class="top-item top-card">
+                    <!-- Desktop -->
+                    <img class="top-icon" srcset="/img/top_sellers/choco_three@1x.jpg 1x, /img/top_sellers/choco_three@2x.jpg 2x"
+                     src="../img/top_sellers/choco_three@1x.jpg" alt="Chocolate tower">
+                </li>
+                        </ul>
+                <button type="submit" class="top-button submit">Buy now</button>
     </div>
 </section>
+
+
