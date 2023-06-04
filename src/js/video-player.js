@@ -1,28 +1,33 @@
 // Інінціалізація програвача
 const player = new Plyr("#features-player");
-// Шлях до постера для програвача
-// player.poster = "https://iili.io/HNysfaf.jpg";
+
+
+
 
 const posters = [
-  { src: "../img/how_it’s_made/cover-mobile@1x.jpg", mediaQuery: "(max-width: 374px)" }, // маленький розмір вьюпорту
-  { src: "../img/how_it’s_made/cover-tablet@1x.jpg", mediaQuery: "(min-width: 375px) and (max-width: 767px)" }, // середній розмір вьюпорту
-  { src: "../img/how_it’s_made/cover@1x.jpg", mediaQuery: "(min-width: 768px)" }, // великий розмір вьюпорту
+  { src: "../img/how_it’s_made/cover-mobile@1x.jpg", mediaQuery: "(max-width: 374px)", retinaSrc: "../img/how_it’s_made/cover-mobile@2x.jpg" }, // маленький размер вьюпорта
+  { src: "../img/how_it’s_made/cover-tablet@1x.jpg", mediaQuery: "(min-width: 375px) and (max-width: 767px)", retinaSrc: "../img/how_it’s_made/cover-tablet@2x.jpg" }, // средний размер вьюпорта
+  { src: "../img/how_it’s_made/cover@1x.jpg", mediaQuery: "(min-width: 768px)", retinaSrc: "../img/how_it’s_made/cover@2x.jpg" }, // большой размер вьюпорта
 ];
-// Функція для зміни постера в залежності від розміру вьюпорту
+
+// Функция для изменения постера в зависимости от размера вьюпорта
 function changePoster() {
   const currentPoster = player.poster;
 
-  // Перевіряємо кожен постер і встановлюємо потрібний постер
+  // Проверяем каждый постер и устанавливаем нужный постер
   for (const poster of posters) {
     if (window.matchMedia(poster.mediaQuery).matches) {
-      if (currentPoster !== poster.src) {
-        player.poster = poster.src;
+      const src = window.devicePixelRatio > 1 ? poster.retinaSrc : poster.src; // Проверяем, поддерживает ли устройство Retina, и выбираем соответствующую версию изображения
+      if (currentPoster !== src) {
+        player.poster = src;
       }
       break;
     }
   }
 }
 
-// Викликаємо функцію після завантаження сторінки та при зміні розміру вьюпорту
+// Вызываем функцию после загрузки страницы и при изменении размера вьюпорта
 window.addEventListener("DOMContentLoaded", changePoster);
 window.addEventListener("resize", changePoster);
+
+
