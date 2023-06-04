@@ -9,7 +9,7 @@
   padding: 20px;
   padding-top: 136px;
   background-color: var(--secondary-bg-color);
-  z-index: 999;
+  z-index: 200;
 
   transform: translateX(100%);
   transition: var(--transition-dur-and-func);
