@@ -1,15 +1,12 @@
 .buy-now-modal {
   width: 609px;
   height: 95vh;
-
+  position: relative;
   overflow-y: auto;
-
-  padding: 32px 24px;
+  padding: 48px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid var(--accent-text-color);
   border-radius: 15px;
-
   background-color: var(--primary-bg-color);
 }
 
@@ -41,21 +38,20 @@
   height: 24px;
   stroke: currentColor;
 }
-.buy-now-modal .title {
+.buy-now-title {
   margin-bottom: 32px;
+  text-align: center;
 }
-
 .buy-now-list {
   display: flex;
   justify-content: center;
-
-  margin-bottom: 14px;
+  margin-bottom: 40px;
   gap: 16px;
 }
 
 .buy-now-thumb {
   text-align: center;
-  padding: 32px 32px 28px;
+  padding: 32px 32px 18px;
 
   background-color: var(--main-light-text-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -67,10 +63,13 @@
 }
 
 .buy-now-btn {
+  width: 96px;
+  white-space: nowrap;
+  font-weight: 600;
   padding: 8px 27px;
   background: var(--primary-bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
-
+  border-radius: 20px;
   transition: background var(--transition-dur-and-func),
     border var(--transition-dur-and-func);
 }
@@ -100,19 +99,20 @@
 
 .buy-now-label-title {
   margin-bottom: 8px;
-
+  display: block;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-
   color: var(--main-dark-text-color);
 }
 
 .buy-now-label-input {
-  height: 45px;
+  height: 66px;
   width: 100%;
 
-  padding: 14px 18px;
+  padding-top: 22px;
+  padding-left: 24px;
+  padding-bottom: 22px;
 
   font-weight: 500;
   font-size: 14px;
@@ -123,10 +123,6 @@
 
   border-radius: 8px;
   transition: border var(--transition-dur-and-func);
-}
-
-.buy-now-input-wrapper .buy-now-label-input:not(:last-child) {
-  margin-bottom: 14px;
 }
 
 .buy-now-input-wrapper {
@@ -151,41 +147,28 @@
   position: relative;
 }
 
-.buy-now-label-phone {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
-  left: 50px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.21;
-
-  color: var(--main-dark-text-color);
-}
-
-.buy-now-label-phone::after {
-  content: ' ';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 42px;
-
-  display: block;
-  width: 1.5px;
-  height: 25px;
-  background-color: rgba(17, 17, 17, 0.05);
-  border-radius: 2px;
-}
-
 .buy-now-icon-flag {
   position: absolute;
   top: 50%;
   left: 18px;
   transform: translateY(-50%);
-
-  width: 24px;
-  height: 18px;
+  padding-right: 4px;
+  margin-left: 24px;
+  margin-right: 18px;
+  max-width: 32px;
+  max-height: 32px;
+}
+.buy-now-label-phone {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  border-right: 2px solid #4040404d;
+  margin-left: 18px;
+  color: var(--main-dark-text-color);
 }
 
 .buy-now-phone-wrapper .buy-now-label-input {
@@ -201,12 +184,58 @@
   top: 50%;
   right: 14px;
   transform: translateY(-50%);
-
-  width: 22px;
-  height: 13px;
+  width: 44px;
+  height: 30px;
+  margin-right: 24px;
 }
 
 .buy-now-message {
-  height: 91px;
+  display: block;
+  resize: none;
   width: 100%;
+  height: 137px;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding-top: 22px;
+  padding-left: 24px;
+  color: var(--default-icons-color);
+  background-color: inherit;
+}
+
+.buy-now-message:focus {
+  outline: none;
+  border: 1.5px solid var(--accent-text-color);
+}
+
+.buy-now-message::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.buy-now-btn-submit {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  color: var(--additional-bg-color);
+  padding: 12px 28px;
+  width: 109px;
+  max-width: 100%;
+  background: var(--primary-accent-color);
+  border-radius: 100px;
+  border: none;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+}
+.buy-now-btn-submit:hover,
+.buy-now-btn-submit:focus {
+  color: var(--primary-accent-color);
+  background-color: var(--secondary-accent-color);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
 }
