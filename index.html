@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-d337ce2f.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-bed3b4eb.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-e54d254e.css">
 </head>
 
 <body>
@@ -177,7 +177,8 @@
     <div class="container">
         <h1 class="visually-hidden">Delicious Chocolate</h1>
         <h2 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
-        <div class="test">
+
+        <div class="hero-buttons">
             <div>
                 <button type="button" class="modal-btn hero-modal-btn" data-modal-open-review>Buy now</button>
                 <a href="#made" class="link hero-made-btn">How it’s made</a>
@@ -185,15 +186,16 @@
             <div class="scroll-down">
                 <a href="footer-choc" class="link scroll-down-link" data-modal-open-review>
                     <p class="scroll-down-text">scroll down</p>
-                    <svg class="scroll-icon-small" width="16" height="16">
-                    <use href="../img/choco-icons.svg#icon-vector-small"></use>
-                </svg>
-                    <svg class="scroll-icon-large" width="22" height="22">
-                  <use href="../img/choco-icons.svg#icon-vector"></use>
-                </svg>
+                    <svg class="scroll-icon-small" width="5" height="9">
+                        <use href="../img/choco-icons.svg#icon-vector-small"></use>
+                    </svg>
+                    <svg class="scroll-icon-large" width="7" height="13">
+                      <use href="../img/choco-icons.svg#icon-vector"></use>
+                    </svg>
                 </a>
             </div>
         </div>
+
     </div>
 </section>
     <section class="advantages-section section">
@@ -876,23 +878,30 @@
         </button>
     </form>
 </div>
-  <div class="backdrop is-hidden hero-modal" data-modal-review>
-    <button type="button" class="hero-modal-close-btn" data-modal-close-review>
-        <svg class="hero-modal-close-icon" width="28" height="28">
+  <div class="is-hidden review-modal" data-modal-review>
+    <button type="button" class="review-modal-close-btn" data-modal-close-review>
+        <svg class="review-modal-close-icon" width="28" height="28">
             <use href="../img/choco-icons.svg#icon-x-close-small"></use>
         </svg>
     </button>
-    <form>
-        <h2>LEAVE A REVIEW ABOUT OUR CHOCOLATE</h2>
-        <input name="user_name" type="text" placeholder="Name">
-        <input name="user_e-mail" type="email" placeholder="Email">
-        <div><input name="user_phone_number" type="number" placeholder="Phone number">
-            <img src="../img/ukraine.svg" alt="flag">
-            <span>+380</span>
+
+    <h2 class="section-title reveiew-modal-title">leave a review about <span class="review-title-part">our
+            chocolate</span></h2>
+    <form class="leave-review-form">
+        <input class="input-field" name="user_name" type="text" placeholder="Name" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+        <input class="input-field" name="user_e-mail" type="email" placeholder="Email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+        <div class="phone-part">
+            <input class="input-field phone-input" name="user_phone_number" type="number" placeholder="Phone number" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="9">
+
+            <div class="flag-img-part">
+                <img class="flag-img" src="../img/ukraine.svg" alt="flag">
+                <span class="ukr-numb">+380</span>
+            </div>
         </div>
-        <textarea name="text_input" placeholder="Enter text"></textarea>
+        <textarea class="input-text-area" name="text_input" placeholder="Enter text"></textarea>
+        <button type="submit" class="modal-btn leave-review-modal-btn">Send</button>
     </form>
-    <button type="submit" class="modal-btn">Send</button>
+
 </div>
   
 
