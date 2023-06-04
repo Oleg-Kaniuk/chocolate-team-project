@@ -29,11 +29,11 @@
 .my-swiper {
   width: 100%;
 }
-.swiper-wrapper {
+.products-wrapper {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
-  .swiper-wrapper {
+  .products-wrapper {
     margin-bottom: 32px;
   }
 }
@@ -47,7 +47,7 @@
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  .swiper-slide {
+  .products-swiper {
     padding: 32px 20px;
   }
 }
@@ -84,7 +84,7 @@
   background: var(--hover-icons-color);
   border: none;
 }
-.swiper-pagination {
+.products-pagination {
   position: relative;
 }
 .swiper-pagination-bullet {
