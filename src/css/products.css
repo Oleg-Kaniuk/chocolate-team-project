@@ -93,23 +93,27 @@
   background: rgba(17, 17, 17, 0.1);
   border: 1px solid #fd9222;
 }
-.swiper-pagination-bullet-active {
+.products-pagination .swiper-pagination-bullet-active {
   width: 28px;
   height: 13px;
   border-radius: 10px;
   background: var(--hover-icons-color);
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.products-pagination.swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   margin: 0;
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.products-pagination.swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet:not(:last-child) {
   margin-right: 13px;
 }
-.swiper-horizontal > .swiper-pagination-bullets,
+.products-pagination.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
