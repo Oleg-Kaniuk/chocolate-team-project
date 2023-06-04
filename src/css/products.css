@@ -26,7 +26,7 @@
     line-height: 1.17;
   }
 }
-.swiper {
+.my-swiper {
   width: 100%;
 }
 .swiper-wrapper {
@@ -37,7 +37,7 @@
     margin-bottom: 32px;
   }
 }
-.swiper-slide {
+.products-swiper {
   display: block;
   width: 335px;
   padding: 32px 52px;
@@ -84,6 +84,9 @@
   background: var(--hover-icons-color);
   border: none;
 }
+.swiper-pagination {
+  position: relative;
+}
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -95,9 +98,6 @@
   height: 13px;
   border-radius: 10px;
   background: var(--hover-icons-color);
-}
-.swiper-pagination {
-  position: relative;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
