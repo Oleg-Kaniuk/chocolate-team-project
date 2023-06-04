@@ -40,6 +40,7 @@
   .made-blok-video {
     width: 600px;
     height: 400px;
+    margin-bottom: 20px;
   }
 }
 
@@ -99,7 +100,6 @@
 
   top: 5px;
   left: -16px;
-  /* bottom: -1px; */
 
   width: 8px;
   height: 8px;
@@ -108,3 +108,154 @@
   border: 1px solid #eceded;
   border-radius: 50%;
 }
+
+.features-video {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.plyr {
+  /*
+  Задаємо основний колір для елементів керування
+  вбудованого програвача Plyr
+  */
+  --plyr-color-main: #fd9222;
+  /*  Скруглені кути рамки для відео  */
+  border-radius: 15px;
+}
+
+.plyr__poster {
+  /*  Регулюємо розмір постера  */
+  background-size: cover;
+}
+
+.plyr__control--overlaid {
+  /*  Встановлюємо стилі для кнопки play  */
+  --plyr-control-spacing: 5px;
+  --plyr-video-control-background-hover: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+}
+
+/* Приховуємо кнопу play після активації програвання відео */
+.plyr--paused.plyr__control--overlaid {
+  opacity: 0;
+}
+/* Приховуємо панель з елементами управління перед активацією програвання відео */
+.plyr--paused.plyr--stopped .plyr__controls {
+  opacity: 0;
+}
+
+/*  */
+/*  */
+/*  */
+/* .video-file {
+  width: 600px;
+} */
+/* .made-blok-video {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  background-image: url(../img/how_it’s_made/cover-mobile@1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .made-blok-video {
+    background-image: url(../img/how_it’s_made/cover-mobile@2x.jpg);
+  }
+}
+@media only screen and (min-width: 375px) {
+  .made-blok-video {
+    background-image: url(../img/how_it’s_made/cover-tablet@1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .made-blok-video {
+    background-image: url(../img/how_it’s_made/cover-tablet@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .made-blok-video {
+    background-image: url(../img/how_it’s_made/cover@1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .made-blok-video {
+    background-image: url(../img/how_it’s_made/cover@2x.jpg);
+  }
+} */
+
+/* .made-blok-video {
+  position: relative;
+} */
+
+/* .control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+}
+
+.control:active,
+.control:focus {
+  display: none;
+} */
+
+/* .plyr__control {
+  background: #0000;
+  border: 0;
+  border-radius: 4px;
+  border-radius: var(--plyr-control-radius, 4px);
+  color: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow: visible;
+  padding: 7px;
+  padding: calc(var(--plyr-control-spacing, 10px) * 0.7);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.plyr__control svg {
+  fill: currentColor;
+  display: block;
+  height: 18px;
+  height: var(--plyr-control-icon-size, 18px);
+  pointer-events: none;
+  width: 18px;
+  width: var(--plyr-control-icon-size, 18px);
+}
+
+.plyr__control:focus {
+  outline: 0;
+}
+
+.plyr__control:focus-visible {
+  outline: 2px dashed #00b2ff;
+  outline: 2px dashed
+    var(
+      --plyr-focus-visible-color,
+      var(--plyr-color-main, var(--plyr-color-main, #00b2ff))
+    );
+  outline-offset: 2px;
+}
+
+a.plyr__control {
+  text-decoration: none;
+} */
