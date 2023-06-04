@@ -24,25 +24,6 @@
   }
 }
 
-.made-blok-video {
-  max-width: 335px;
-  max-height: 500px;
-}
-
-@media only screen and (min-width: 768px) {
-  .made-blok-video {
-    max-width: 614px;
-    max-height: 400px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .made-blok-video {
-    width: 600px;
-    height: 400px;
-  }
-}
-
 .made-blok {
   padding: 20px 14px;
   background-color: var(--additional-bg-color);
@@ -99,7 +80,6 @@
 
   top: 5px;
   left: -16px;
-  /* bottom: -1px; */
 
   width: 8px;
   height: 8px;
@@ -107,4 +87,63 @@
   background: #4c4c4c;
   border: 1px solid #eceded;
   border-radius: 50%;
+}
+
+.plyr {
+  /*
+  Задаємо основний колір для елементів керування
+  вбудованого програвача Plyr
+  */
+  --plyr-color-main: #fd9222;
+  /*  Скруглені кути рамки для відео  */
+  border-radius: 15px;
+  width: 335px;
+  height: 500px;
+}
+
+@media only screen and (min-width: 768px) {
+  .plyr {
+    width: 614px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .plyr {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .plyr {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .plyr {
+    margin-bottom: 20px;
+  }
+}
+
+.plyr__poster {
+  /*  Регулюємо розмір постера  */
+  background-size: cover;
+}
+
+.plyr__control--overlaid {
+  /*  Встановлюємо стилі для кнопки play  */
+  --plyr-control-spacing: 5px;
+  --plyr-video-control-background-hover: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+}
+
+/* Приховуємо кнопу play після активації програвання відео */
+.plyr--paused.plyr__control--overlaid {
+  opacity: 0;
+}
+/* Приховуємо панель з елементами управління перед активацією програвання відео */
+.plyr--paused.plyr--stopped .plyr__controls {
+  opacity: 0;
 }

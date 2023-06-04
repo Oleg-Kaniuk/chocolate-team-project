@@ -1,10 +1,10 @@
 .advantages-section {
-background-color: var(--secondary-bg-color);
-padding-bottom: 0;
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 0;
 }
 .advantages-container {
- padding-top: 20px;
- padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
   .advantages-container {
@@ -19,15 +19,15 @@ padding-bottom: 0;
   }
 }
 .advantages-card-set {
-display: flex;
-flex-wrap: wrap;
-row-gap: 28px;
-column-gap: 20px
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 28px;
+  column-gap: 20px;
 }
 @media only screen and (min-width: 768px) {
   .advantages-card-set {
     row-gap: 32px;
-    column-gap: 60px
+    column-gap: 60px;
   }
 }
 
@@ -49,27 +49,27 @@ column-gap: 20px
 }
 
 .advantages-icons-container {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 365px;
-    width: 62px;
-    height: 62px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
 }
 .advantages-subtitle {
-    color: var(--main-light-text-color);
-    margin-bottom: 18px;
+  color: var(--main-light-text-color);
+  margin-bottom: 18px;
 }
-.advantages-text {
-    letter-spacing: -0.02em;
-    line-height:1.21;
-    color: var(--additional-text-color);
-    margin-bottom: 20px;
+.advantages-text.section-text {
+  letter-spacing: -0.02em;
+  line-height: 1.21;
+  color: var(--additional-text-color);
+  margin-bottom: 20px;
 }
 .after::after {
-  content: "";
+  content: '';
   width: 124px;
   height: 0px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -82,11 +82,10 @@ column-gap: 20px
   }
 }
 .advantages-after::after {
-  transform: rotate(-90deg) translateX(143px) translateY(256px);  
+  transform: rotate(-90deg) translateX(143px) translateY(256px);
 }
 @media only screen and (max-width: 1199px) {
   .advantages-after::after {
     display: none;
   }
 }
- 
