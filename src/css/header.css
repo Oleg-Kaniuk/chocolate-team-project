@@ -1,4 +1,9 @@
 .header-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--main-light-text-color);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -46,15 +51,17 @@
   display: flex;
   align-items: center;
   margin-right: auto;
-  max-height: 24px;
+  height: 28px;
   width: 1136px;
 }
 /* link */
 .header-link {
-  font-style: italic;
   display: flex;
   align-items: center;
   column-gap: 7px;
+}
+.span-simply {
+  font-style: italic;
 }
 
 .header-nav-link {
@@ -84,6 +91,9 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
+  .header-nav {
+    height: 32px;
+  }
   .header-div {
     padding-top: 24px;
     padding-bottom: 24px;
