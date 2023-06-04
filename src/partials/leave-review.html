@@ -1,18 +1,25 @@
-<div class="backdrop is-hidden hero-modal" data-modal-review>
-    <button type="button" class="hero-modal-close-btn" data-modal-close-review>
-        <svg class="hero-modal-close-icon" width="28" height="28">
+<div class="is-hidden review-modal" data-modal-review>
+    <button type="button" class="review-modal-close-btn" data-modal-close-review>
+        <svg class="review-modal-close-icon" width="28" height="28">
             <use href="../img/choco-icons.svg#icon-x-close-small"></use>
         </svg>
     </button>
-    <form>
-        <h2>LEAVE A REVIEW ABOUT OUR CHOCOLATE</h2>
-        <input name="user_name" type="text" placeholder="Name">
-        <input name="user_e-mail" type="email" placeholder="Email">
-        <div><input name="user_phone_number" type="number" placeholder="Phone number">
-            <img src="../img/ukraine.svg" alt="flag">
-            <span>+380</span>
+
+    <h2 class="section-title reveiew-modal-title">leave a review about <span class="review-title-part">our
+            chocolate</span></h2>
+    <form class="leave-review-form">
+        <input class="input-field" name="user_name" type="text" placeholder="Name" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+        <input class="input-field" name="user_e-mail" type="email" placeholder="Email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+        <div class="phone-part">
+            <input class="input-field phone-input" name="user_phone_number" type="number" placeholder="Phone number" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="9">
+
+            <div class="flag-img-part">
+                <img class="flag-img" src="../img/ukraine.svg" alt="flag">
+                <span class="ukr-numb">+380</span>
+            </div>
         </div>
-        <textarea name="text_input" placeholder="Enter text"></textarea>
+        <textarea class="input-text-area" name="text_input" placeholder="Enter text"></textarea>
+        <button type="submit" class="modal-btn leave-review-modal-btn">Send</button>
     </form>
-    <button type="submit" class="modal-btn">Send</button>
+
 </div>
