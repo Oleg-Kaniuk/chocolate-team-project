@@ -1,7 +1,7 @@
 .footer-con {
     padding-top: 32px;
-    padding-bottom: 32px;}
-.footer-section {background-color: var(--secondary-bg-color);}
+    padding-bottom: 32px;
+background-color: var(--secondary-bg-color);}
 .footer-call {
     width: 300px;
     font-family: var(--primary-font);
@@ -38,8 +38,7 @@ gap: 4px;}
         text-align: center;
         letter-spacing: -0.02em;
     color: var(--main-light-text-color);
-    transition: var(--transition-dur-and-func);
-}
+    transition: var(--transition-dur-and-func);}
 
 .footer-contact-text {
     color: var(--main-light-text-color);
@@ -53,21 +52,22 @@ gap: 4px;}
     flex-wrap: nowrap;
     gap: 14px;}
 .footer-soc-icon {height: 22px;
-    transition: var(--transition-dur-and-func);}
-
+    transition: var(--transition-dur-and-func);
+outline: none;}
+.soc-icon {fill: transparent;
+    stroke: var(--main-light-text-color);
+    width: 22px;
+    height: 22px;}
 .soc-icon:hover {stroke: var(--hover-icons-color)}
 .footer-contact-item:hover {color: var(--hover-icons-color)}
 .footer-link-menu:hover {color: var(--hover-icons-color);}
 
-.soc-icon:focus {stroke: var(--hover-icons-color)}
-.footer-contact-item:hover {color: var(--hover-icons-color)}
-.footer-link-menu:focus {color: var(--hover-icons-color);}
-.soc-icon {
-    fill: transparent;
-    stroke: var(--main-light-text-color);
-    width: 22px;
-    height: 22px;
-}
+.soc-icon:focus {stroke: var(--hover-icons-color);
+outline: var(--hover-icons-color);}
+.footer-contact-item:focus {color: var(--hover-icons-color);
+outline: none;}
+.footer-link-menu:focus {color: var(--hover-icons-color);
+outline: none;}
 
 .footer-up-part::after {
     content: '';
@@ -100,7 +100,8 @@ align-items: center;}
 @media screen and (min-width: 768px) {
     .footer-con {
         padding-top: 50px;
-        padding-bottom: 50px;}
+        padding-bottom: 50px;
+        height: 262px;}
 
     .footer-call {font-weight: 500;
         font-size: 28px;
@@ -140,7 +141,8 @@ align-items: center;}
         gap: 24px;}}
 
 @media screen and (min-width: 1200px) {
-.footer-con {height: 270px;}    
+.footer-con {height: 270px;
+    max-width: 1200px;}    
 .footer-call {font-size: 28px;
     line-height: 34px;
     letter-spacing: -0.02em;}
