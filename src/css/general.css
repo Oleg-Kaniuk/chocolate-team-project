@@ -189,3 +189,7 @@
   color: var(--main-light-text-color);
   background-color: var(--reserve-bg-color);
 }
+
+h2 {
+  scroll-margin-top: 5rem;
+}
