@@ -1,15 +1,15 @@
 <div class="explore-backdrop is-hidden" data-modal-explore>
   <div class="explore-modal">
-    <button class="explore-close-btn" type="button">
+    <button class="explore-close-btn" type="button" data-modal-close-explore>
       <svg class="explore-close-icon" width="24" height="24">
         <use href="./img/choco-icons.svg#icon-x-close"></use>
       </svg>
     </button>
 
-    <strong class="explore-modal-title section-title"></strong>
+    <h2 class="explore-modal-title section-title">
       Explore our<br />
       <span class="title-accent">new chocolate</span> first!
-</strong>
+    </h2>
     <form
       class="explore-modal-form"
       name="explore-modal-form"
@@ -19,7 +19,12 @@
       <label class="explore-label">
         <input
           class="explore-input"
-          name="user_e-mail" type="email" placeholder="Enter your email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2"
+          name="user_e-mail"
+          type="email"
+          placeholder="Enter your email"
+          required
+          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          minlength="2"
         />
       </label>
 
