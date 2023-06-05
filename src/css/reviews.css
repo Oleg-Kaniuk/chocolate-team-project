@@ -1,6 +1,7 @@
-.reviews-span{
-	color: var(--primary-accent-color);
+.reviews-span {
+  color: var(--primary-accent-color);
 }
+
 .reviews-cards{
 	margin-bottom: 32px;
 	position: relative;
@@ -30,12 +31,13 @@
 	user-select: none;
 }
 .reviews-card-title {
-	user-select: none;
+  user-select: none;
 }
 .reviews-card-title:not(:last-child) {
-	margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 .reviews-card-text {
+
 	text-align: center;
 	user-select: none;
 }
@@ -50,11 +52,12 @@
 	cursor: pointer;
 }
 .reviews-button:hover,
-.reviews-button:focus{
-	color: var(--main-light-text-color);
-	background-color: var(--reserve-bg-color);
+.reviews-button:focus {
+  color: var(--main-light-text-color);
+  background-color: var(--reserve-bg-color);
 }
 /* Буллєти */
+
 .reviews-cards.swiper-pagination-bullet{
 	width: 13px;
 	height: 13px;
@@ -65,10 +68,10 @@
 	margin-left: 0;
 }
 .reviews-cards .swiper-pagination-bullet-active {
-	width: 28px;
-	height: 13px;
-	background-color: #FD9222;
-	border-radius: 100px;
+  width: 28px;
+  height: 13px;
+  background-color: #fd9222;
+  border-radius: 100px;
 }
 /* Пагінація */
 .reviews-pagination{
