@@ -107,6 +107,7 @@
     padding: 12px 28px;
     border: none;
     border-radius: 100px;
+    transition: var(--transition-dur-and-func);
 }
 
 .subscribe-btn:hover,
