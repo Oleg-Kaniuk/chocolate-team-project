@@ -1,7 +1,9 @@
 .advantages-section {
   background-color: var(--secondary-bg-color);
   padding-bottom: 0;
+  max-width: none;
 }
+
 .advantages-container {
   padding-top: 20px;
   padding-bottom: 20px;
