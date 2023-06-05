@@ -4,11 +4,13 @@
 @media only screen and (min-width: 768px) {
   .components-section {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .components-section {
     padding-top: 128px;
+    padding-bottom: 128px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -20,6 +22,7 @@
     line-height: 1.16;
   }
 }
+
 .components-text-first {
   margin-top: 24px;
   margin-bottom: 32px;
@@ -63,8 +66,18 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .components-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .components-title {
+    max-width: 283px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .components-item {
-  margin-bottom: 20px;
   position: relative;
   display: flex;
   width: 100%;
