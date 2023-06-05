@@ -8,8 +8,12 @@ var swiper = new Swiper(`.reviews-cards`, {
 	keyboard: {
 		enabled:true,
 		onlyInViewport:true,
-		pageUpDown:true,
+		// pageUpDown:true,
 	},
+	lazy: {
+		loadPrevNext: true,
+	 },
+	 loop: true, 
 	
 	breakpoints:{
 		320: {
@@ -20,6 +24,7 @@ var swiper = new Swiper(`.reviews-cards`, {
 		},
 		1200: {
 			slidesPerView: 3,
+			spaceBetween: 28,
 		}
 	},
 
