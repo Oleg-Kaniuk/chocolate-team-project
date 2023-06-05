@@ -1,10 +1,13 @@
+.subscribe-section {
+    padding-bottom: 0;
+}
+
 .subscribe-container {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 62px;
     padding-bottom: 63px;
-    /* width: 100%; */
 }
 
 @media only screen and (min-width: 320px) {
@@ -68,7 +71,12 @@
     margin-bottom: 24px;
 }
 
-
+@media only screen and (min-width: 768px) {
+    .subscribe-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
 
 
 .subscribe-subtitle {
@@ -77,6 +85,13 @@
     letter-spacing: -0.02em;
     color: var(--main-light-text-color);
     margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 320px) {
+    .subscribe-subtitle {
+        width: 326px;
+
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -92,6 +107,12 @@
     padding: 12px 28px;
     border: none;
     border-radius: 100px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    color: var(--reserve-bg-color);
+    background-color: var(--secondary-accent-color);
 }
 
 @media only screen and (min-width: 768px) {

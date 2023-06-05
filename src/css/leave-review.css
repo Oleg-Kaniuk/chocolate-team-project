@@ -1,10 +1,11 @@
-.is-hidden {
+.is-hidden.review-modal {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
 
-.backdrop {
+
+/* .backdrop {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -12,56 +13,197 @@
     left: 0;
     background-color: rgba(46, 47, 66, 0.4);
     transition: var(--transition-dur-and-func);
-}
+} */
 
-@media only screen and (max-width: 480px) {
-    .hero-modal {
+@media only screen and (max-width: 768px) {
+    .review-modal {
         width: 95%;
     }
 }
 
-.hero-modal {
+.review-modal {
     position: absolute;
     left: 50%;
     top: 50%;
-    padding: 72px 16px 24px;
-    background-color: var(--primary-bg-color);
+    padding: 32px 24px;
+    background-color: var(--additional-bg-color);
     border-radius: 15px;
     transform: translate(-50%, -50%) scale(1);
     transition: var(--transition-dur-and-func);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (min-width: 480px) {
-    .hero-modal {
-        width: 408px;
-        padding: 72px 24px 24px;
+@media only screen and (min-width: 768px) {
+    .review-modal {
+        width: 517px;
+        padding: 40px;
     }
 }
 
-.hero-modal-close-btn {
+.review-modal-close-btn {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     padding: 0;
-    top: 24px;
-    right: 24px;
+    top: 14px;
+    right: 14px;
     width: 24px;
     height: 24px;
     border: none;
+    background-color: var(--additional-bg-color);
+    stroke: black;
     border-radius: 50%;
     transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
 
-.hero-modal-close-btn:hover,
-.hero-modal-close-btn:focus {
-    background-color: var(--hover-focus-color);
+.review-modal-close-btn:hover,
+.review-modal-close-btn:focus {
+    background-color: var(--secondary-accent-color);
     border: none;
-    fill: var(--white-color);
+    stroke: var(--accent-text-color);
 }
 
-.hero-modal-close-icon {
+.review-modal-close-icon {
     transition: fill var(--transition-dur-and-func);
+}
+
+.review-title-part {
+    color: var(--reserve-bg-color);
+}
+
+.reveiew-modal-title {
+    width: 254px;
+    height: 48px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+    .reveiew-modal-title {
+        width: 298px;
+        margin-bottom: 40px;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
+
+.leave-review-form {
+    display: flex;
+    flex-direction: column;
+    height: 431px;
+    gap: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    .leave-review-form {
+        gap: 16px;
+    }
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 10px 18px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+    letter-spacing: -0.02em;
+}
+
+.input-field:hover,
+.input-field:focus {
+    outline-color: var(--reserve-bg-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .input-field {
+        padding: 22px 24px;
+        height: 66px;
+    }
+}
+
+.phone-input {
+    padding: 10px 18px 10px 106px;
+}
+
+.phone-part {
+    position: relative;
+}
+
+.flag-img-part {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    box-shadow: 1.5px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    top: 25%;
+    gap: 8px;
+    padding-left: 18px;
+    padding-right: 8px;
+}
+
+.flag-img {
+    width: 24px;
+    height: 24px;
+}
+
+.ukr-numb {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: var(--forms-text-color);
+}
+
+.input-field::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+    font-size: 14px;
+    line-height: 1.21;
+}
+
+@media only screen and (min-width: 768px) {
+    .input-field::placeholder {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+.input-text-area {
+    resize: none;
+    height: 91px;
+    padding-top: 14px;
+    padding-left: 18px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.input-text-area::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.input-text-area:hover,
+.input-text-area:focus {
+    outline-color: var(--reserve-bg-color);
+    font-size: 14px;
+    line-height: 1.21;
+}
+
+@media only screen and (min-width: 768px) {
+    .input-text-area::placeholder {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+.leave-review-modal-btn {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 100px;
+    width: 93px;
 }
