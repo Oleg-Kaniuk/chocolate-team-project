@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-74412603.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-bfac6d17.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-9728b645.css">
 </head>
 
 <body>
@@ -178,15 +178,15 @@
     <section class="section hero-section">
     <div class="container">
         <h1 class="visually-hidden">Delicious Chocolate</h1>
-        <h2 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
+        <h2 class="hero-title">Treat yourself or a loved one to <span class="hero-title-part">our finest ingredients for a moment</span> of pure delight!</h2>
 
         <div class="hero-buttons">
             <div>
-                <button type="button" class="modal-btn hero-modal-btn" data-modal-open-review>Buy now</button>
+                <button type="button" class="modal-btn hero-modal-btn" js-open-modal>Buy now</button>
                 <a href="#made" class="link hero-made-btn">How it’s made</a>
             </div>
             <div class="scroll-down">
-                <a href="footer-choc" class="link scroll-down-link" data-modal-open-review>
+                <a href="#footer-choc" class="link scroll-down-link">
                     <p class="scroll-down-text">scroll down</p>
                     <svg class="scroll-icon-small" width="5" height="9">
                         <use href="../img/choco-icons.svg#icon-vector-small"></use>
@@ -876,8 +876,9 @@
         </svg>
     </button>
 
-    <h2 class="section-title reveiew-modal-title">leave a review about <span class="review-title-part">our
-            chocolate</span></h2>
+    <h2 class="section-title reveiew-modal-title">
+        leave a review <span class="modal-text-part">about <span class="review-title-part">our chocolate</span></span>
+    </h2>
     <form class="leave-review-form">
         <input class="input-field" name="user_name" type="text" placeholder="Name" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
         <input class="input-field" name="user_e-mail" type="email" placeholder="Email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
