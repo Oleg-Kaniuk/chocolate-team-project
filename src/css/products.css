@@ -76,6 +76,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   color: var(--main-dark-text-color);
+  transition: var(--transition-dur-and-func);
   cursor: pointer;
 }
 .products-btn:hover,
@@ -86,36 +87,38 @@
 }
 .products-pagination {
   position: relative;
+  height: 13px;
 }
-.swiper-pagination-bullet {
+.my-swiper .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background: rgba(17, 17, 17, 0.1);
-  border: 1px solid #fd9222;
 }
-.products-pagination .swiper-pagination-bullet-active {
+.my-swiper .swiper-pagination-bullet-active {
   width: 28px;
   height: 13px;
   border-radius: 10px;
   background: var(--hover-icons-color);
 }
-.products-pagination.swiper-horizontal
+.my-swiper
+  .swiper-horizontal
   > .swiper-pagination-bullets
   .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   margin: 0;
 }
-.products-pagination.swiper-horizontal
+.my-swiper
+  .swiper-horizontal
   > .swiper-pagination-bullets
   .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet:not(:last-child) {
   margin-right: 13px;
 }
-.products-pagination.swiper-horizontal > .swiper-pagination-bullets,
+.my-swiper .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 1px;
+  bottom: 2px;
 }
