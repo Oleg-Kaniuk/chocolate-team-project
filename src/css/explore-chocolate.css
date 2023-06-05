@@ -1,0 +1,181 @@
+.explore-backdrop {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 101; 
+  background-color: rgba(46, 47, 66, 0.8);
+  transition: opacity var(--transition-dur-and-func); 
+}
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.explore-modal {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+  width: 311px;
+  height: 350px;
+
+  background-color: var(--primary-bg-color);
+  border-radius: 15px;
+  transition: transform var(--transition-dur-and-func);
+  padding-top: 201px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+
+  background-image: url(/img/subscribe/chocolate-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 311px 169px;
+
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .explore-modal {
+        background-image: url(/img/subscribe/chocolate-mobile@2x.jpg);
+    }
+}
+@media only screen and (min-width: 768px) {
+  .explore-modal {
+    width: 538px;
+    height: 412px;
+    padding-top: 236px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-image: url(/img/subscribe/chocolate@1x.jpg);
+    background-size: 538px 196px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .explore-modal {
+            background-image: url(/img/subscribe/chocolate@2x.jpg);
+        }
+    }
+}
+
+.explore-close-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position:absolute;
+   top: 15px;
+   right: 15px;
+   padding: 6px;
+  background-color: transparent;
+  border: none;
+  transition: transform var(--transition-dur-and-func), background-color var(--transition-dur-and-func); 
+}
+@media only screen and (min-width: 768px) {
+  .explore-close-btn {
+    padding: 7px;
+    top: 24px;
+    right: 24px;
+  }
+}
+.explore-close-btn:hover, 
+.explore-close-btn:focus,
+.explore-close-btn:active {
+  background-color: var(--secondary-accent-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+
+.explore-close-icon {
+stroke: var(--main-light-text-color);
+}
+
+
+.explore-close-icon:hover, 
+.explore-close-icon:focus {
+  stroke: var(--accent-text-color);
+
+}
+.explore-modal-title {
+ text-align: left;
+ padding-bottom: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .explore-modal-title {
+   padding-bottom: 28px; 
+   font-size: 24px;
+   line-height: 1.17;
+  }
+}
+
+.explore-label {
+ position: relative;
+}
+.explore-input {
+ position: absolute;
+ width: 263px;
+ height: 45px; 
+ padding: 14px 18px;
+ border: 1.5px solid rgba(17, 17, 17, 0.05);
+filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+border-radius: 25px;
+transition: transform var(--transition-dur-and-func) border-color var(--transition-dur-and-func);
+top: 24px;
+}
+@media only screen and (min-width: 767px) {
+  .explore-input {
+    width: 313px;
+    height: 52px;
+    padding: 14px 24px;;
+     top: 28px;
+  }
+}
+.explore-input:focus {
+ border-color: var(--primary-accent-color);
+}
+
+.explore-modal-button {
+border: none;
+border-radius: 100px;
+position: absolute;
+width: 100px;
+height: 45px;
+justify-content: center;
+align-items: center;
+padding: 14px 22px;
+right: 23px;
+bottom: 39px;
+transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
+}
+.explore-modal-button:hover,
+.explore-modal-button:focus
+.explore-modal-button:active {
+background-color: var(--secondary-accent-color) ;
+color: var(--primary-accent-color);
+}
+@media only screen and (min-width: 768px) {
+  .explore-modal-button {
+    width: 137px;
+    height: 52px;
+    padding: 17px 32px;
+    right: 40px;
+    bottom: 55px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .explore-primary-span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .explore-secondary-span {
+    display: none;
+  }
+}

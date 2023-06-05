@@ -1,0 +1,36 @@
+<div class="explore-backdrop is-hidden" data-modal-explore>
+  <div class="explore-modal">
+    <button class="explore-close-btn" type="button">
+      <svg class="explore-close-icon" width="24" height="24">
+        <use href="./img/choco-icons.svg#icon-x-close"></use>
+      </svg>
+    </button>
+
+    <strong class="explore-modal-title section-title"></strong>
+      Explore our<br />
+      <span class="title-accent">new chocolate</span> first!
+</strong>
+    <form
+      class="explore-modal-form"
+      name="explore-modal-form"
+      autocomplete="on"
+      novalidate
+    >
+      <label class="explore-label">
+        <input
+          class="explore-input"
+          name="user_e-mail" type="email" placeholder="Enter your email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2"
+        />
+      </label>
+
+      <button
+        class="explore-modal-button modal-btn"
+        type="submit"
+        data-modal-close-explore
+      >
+        <span class="explore-primary-span">Submit</span>
+        <span class="explore-secondary-span">Subscribe</span>
+      </button>
+    </form>
+  </div>
+</div>
