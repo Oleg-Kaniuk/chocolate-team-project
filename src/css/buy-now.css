@@ -239,3 +239,15 @@
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
 }
+.js-overlay-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 40;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+}
