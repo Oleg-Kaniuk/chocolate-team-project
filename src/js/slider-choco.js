@@ -11,9 +11,9 @@ var swiper = new Swiper('.my-swiper', {
   },
   spaceBetween: 18,
 
-  slidesPerGroup: 1,
+  // slidesPerGroup: 1,
   grabCursor: true,
-  // loop: true,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
