@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-eb1a8d54.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-12f304fe.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-47438a44.css">
 </head>
 
 <body>
@@ -791,14 +791,15 @@
 <!-- <script type="module" src="../js/gotop.js"></script> -->
   </footer>
 
-  <div class="buy-now-modal modal active">
-    <button type="button" class="buy-now-btn-close">
+  <div class="buy-now-modal js-overlay-modal active">
+    <button type="button" class="buy-now-btn-close
+    js-modal-close">
         <svg class="buy-now-icon-close">
             <use href="../img/choco-icons.svg#icon-x-close"></use>
         </svg>
     </button>
-    <h2 class="title"><span class="title-accent">Buy</span> Now</h2>
-    <ul class="buy-now-list">
+    <h2 class="buy-now-title"><span class="title-accent">Buy</span> Now</h2>
+    <ul class="buy-now-list list">
         <li class="buy-now-item">
             <div class="buy-now-thumb">
                 <div class="buy-now-wrapper">
@@ -830,8 +831,6 @@
             </div>
         </li>
     </ul>
-
-    <div class="buy-now-pagination"></div>
     <form class="buy-now-modal-form">
         <label class="buy-now-label">
             <span class="buy-now-label-title">Personal information</span>
@@ -852,31 +851,26 @@
             <div class="buy-now-phone-wrapper">
                 <input type="tel" name="user-phone" required="" pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
                     title="xx-xxx-xx-xx" class="buy-now-label-input" placeholder="Phone number">
-
-                <svg class="buy-now-icon-flag">
-                    <use href="../img/ukraine.svg"></use>
-                </svg>
+                <img class="buy-now-icon-flag" src="../img/ukraine.svg" alt="ukraine">
                 <span class="buy-now-label-phone">+380</span>
+
             </div>
         </label>
         <label class="buy-now-label">
             <span class="buy-now-label-title">Card number</span>
             <span class="buy-now-label-input-cards">
                 <div class="buy-now-card-wrapper">
-                    <input type="number" name="user-card" required="" pattern="^[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$"
-                        title="xxxx xxxx xxxx xxxx" class="buy-now-label-input" placeholder="Enter card">
-                    <svg class="buy-now-icon-card">
-                        <use href="../img/mastercard.svg"></use>
-                    </svg>
+                    <input type="tel" name="user-card" pattern="^[0-9]{12}" required="" title="xxxx xxxx xxxx xxxx"
+                        class="buy-now-label-input" placeholder="Enter card">
+                    <img class="buy-now-icon-card" src="../img/mastercard.svg" alt="mastercard" width="44" height="30">
                 </div>
             </span>
         </label>
         <label class="buy-now-label">
             <span class="buy-now-label-title">Comment</span>
-            <textarea name="user_message" placeholder="Enter text"
-                class="buy-now-label-input buy-now-message"></textarea>
+            <textarea name="user_message" placeholder="Enter text" class="buy-now-message"></textarea>
         </label>
-        <button class="button modal-btn buy-now-btn-submit" type="submit">
+        <button class="button buy-now-btn-submit" type="submit">
             Submit
         </button>
     </form>
