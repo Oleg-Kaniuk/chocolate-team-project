@@ -160,6 +160,13 @@
     }
 }
 
+
+/* .scroll-down-link:hover,
+.scroll-down-link:focus {
+    background-color: var(--reserve-bg-color);
+    stroke: var(--main-light-text-color);
+} */
+
 .scroll-down-text {
     font-weight: 500;
     font-size: 12px;
@@ -173,6 +180,11 @@
         font-size: 14px;
         line-height: 1.28;
     }
+}
+
+.scroll-down-text:hover,
+.scroll-down-text:focus {
+    color: var(--accent-text-color);
 }
 
 @media only screen and (max-width: 767px) {
@@ -205,5 +217,12 @@
     .hero-buttons {
         display: flex;
         align-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-title-part {
+        white-space: nowrap;
+        display: inline;
     }
 }
