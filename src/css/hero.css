@@ -12,7 +12,7 @@
 
 @media only screen and (min-width:1200px) {
     .hero-section {
-        padding-top: 88px;
+        padding-top: 80px;
         padding-bottom: 72px;
     }
 }
@@ -22,6 +22,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 335px;
     padding-top: 395px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -40,6 +41,7 @@
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-tablet@1x.jpg);
         padding-top: 671px;
         padding-bottom: 40px;
+        max-width: 704px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -55,6 +57,7 @@
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate@1x.jpg);
         padding-top: 381px;
         padding-bottom: 40px;
+        max-width: 1136px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -157,6 +160,18 @@
     .scroll-icon-small {
         display: none;
     }
+}
+
+.scroll-icon-small:hover,
+.scroll-icon-small:focus {
+    background-color: var(--accent-text-color);
+    stroke: var(--additional-bg-color);
+}
+
+.scroll-icon-large:hover,
+.scroll-icon-large:focus {
+    background-color: var(--accent-text-color);
+    stroke: var(--additional-bg-color);
 }
 
 .scroll-icon-large {
