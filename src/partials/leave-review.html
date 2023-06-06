@@ -2,26 +2,27 @@
     <div class="review-modal ">
         <button type="button" class="review-modal-close-btn" data-modal-close-review>
             <svg class="review-modal-close-icon" width="28" height="28">
-                <use href="../img/choco-icons.svg#icon-x-close-small"></use>
+                <use href="/img/choco-icons.svg#icon-x-close-small"></use>
             </svg>
         </button>
 
         <h2 class="section-title reveiew-modal-title">
             leave a review <span class="modal-text-part">about <span class="review-title-part">our chocolate</span></span>
         </h2>
-        <form class="leave-review-form">
-            <input class="input-field" name="user_name" type="text" placeholder="Name" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
-            <input class="input-field" name="user_e-mail" type="email" placeholder="Email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
-            <div class="phone-part">
-                <input class="input-field phone-input" name="user_phone_number" type="number" placeholder="Phone number" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="9">
-
-                <div class="flag-img-part">
-                    <img class="flag-img" src="../img/ukraine.svg" alt="flag">
-                    <span class="ukr-numb">+380</span>
+        <form>
+            <div class="leave-review-form">
+                <input class="input-field" name="user_name" type="text" placeholder="Name" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+                <input class="input-field" name="user_e-mail" type="email" placeholder="Email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+                <div class="phone-part">
+                    <input class="input-field phone-input" name="user_phone_number" type="number" placeholder="Phone number" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="9">
+                    <div class="flag-img-part">
+                        <img class="flag-img" src="/img/ukraine.svg" alt="flag">
+                        <span class="ukr-numb">+380</span>
+                    </div>
                 </div>
+                <textarea class="input-text-area" name="text_input" placeholder="Enter text"></textarea>
+                <button type="submit" class="modal-btn leave-review-modal-btn" data-modal-close-review>Send</button>
             </div>
-            <textarea class="input-text-area" name="text_input" placeholder="Enter text"></textarea>
-            <button type="submit" class="modal-btn leave-review-modal-btn">Send</button>
         </form>
     </div>
 </div>

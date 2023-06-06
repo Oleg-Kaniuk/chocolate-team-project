@@ -1,53 +1,68 @@
 .hero-section {
-    padding-top: 395px;
-    padding-bottom: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 72px;
+    padding-top: 62px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        padding-bottom: 50px;
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .hero-section {
+        padding-top: 80px;
+        padding-bottom: 72px;
+    }
+}
+
+.hero-container {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 72px;
-    margin-top: 62px;
+    max-width: 335px;
+    padding-top: 395px;
+    padding-bottom: 20px;
     border-radius: 30px;
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hero-section {
+    .hero-container {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-mobile@2x.jpg);
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-section {
+    .hero-container {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-tablet@1x.jpg);
         padding-top: 671px;
         padding-bottom: 40px;
-        margin-bottom: 50px;
-        margin-top: 80px;
+        max-width: 704px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero-section {
+        .hero-container {
             background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-tablet@2x.jpg);
         }
     }
 }
 
 @media only screen and (min-width:1200px) {
-    .hero-section {
+    .hero-container {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate@1x.jpg);
         padding-top: 381px;
         padding-bottom: 40px;
-        margin-top: 88px;
-        margin-bottom: 72px;
+        max-width: 1136px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero-section {
+        .hero-container {
             background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate@2x.jpg);
         }
     }
@@ -145,6 +160,18 @@
     .scroll-icon-small {
         display: none;
     }
+}
+
+.scroll-icon-small:hover,
+.scroll-icon-small:focus {
+    background-color: var(--accent-text-color);
+    stroke: var(--additional-bg-color);
+}
+
+.scroll-icon-large:hover,
+.scroll-icon-large:focus {
+    background-color: var(--accent-text-color);
+    stroke: var(--additional-bg-color);
 }
 
 .scroll-icon-large {
