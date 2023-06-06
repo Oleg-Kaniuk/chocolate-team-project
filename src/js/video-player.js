@@ -5,9 +5,9 @@ const player = new Plyr("#features-player");
 
 
 const posters = [
-  { src: "./img/how_it’s_made/cover-mobile@1x.jpg", mediaQuery: "(max-width: 374px)", retinaSrc: "./img/how_it’s_made/cover-mobile@2x.jpg" }, // маленький размер вьюпорта
-  { src: "./img/how_it’s_made/cover-tablet@1x.jpg", mediaQuery: "(min-width: 375px) and (max-width: 767px)", retinaSrc: "./img/how_it’s_made/cover-tablet@2x.jpg" }, // средний размер вьюпорта
-  { src: "./img/how_it’s_made/cover@1x.jpg", mediaQuery: "(min-width: 768px)", retinaSrc: "./img/how_it’s_made/cover@2x.jpg" }, // большой размер вьюпорта
+  { src: "../img/how_it’s_made/cover-mobile@1x.jpg", mediaQuery: "(max-width: 374px)", retinaSrc: "../img/how_it’s_made/cover-mobile@2x.jpg" }, // маленький размер вьюпорта
+  { src: "../img/how_it’s_made/cover-tablet@1x.jpg", mediaQuery: "(min-width: 375px) and (max-width: 767px)", retinaSrc: "../img/how_it’s_made/cover-tablet@2x.jpg" }, // средний размер вьюпорта
+  { src: "../img/how_it’s_made/cover@1x.jpg", mediaQuery: "(min-width: 768px)", retinaSrc: "../img/how_it’s_made/cover@2x.jpg" }, // большой размер вьюпорта
 ];
 
 // Функция для изменения постера в зависимости от размера вьюпорта
