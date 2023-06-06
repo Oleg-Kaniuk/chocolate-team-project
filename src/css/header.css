@@ -22,17 +22,23 @@
 .header-icon-messeng {
   fill: transparent;
   stroke: var(--main-dark-text-color);
-  width: 24px;
-  max-height: 24px;
+  /* width: 24px;
+  max-height: 24px; */
 }
-.header-icon-messeng:hover,
-.header-icon-messeng:focus {
+
+.header-icon-link {
+  stroke: var(--main-dark-text-color);
+  transition: stroke var(--transition-dur-and-func);
+}
+
+.header-icon-link:hover,
+.header-icon-link:focus {
   stroke: var(--accent-text-color);
-  transition: var(--transition-dur-and-func);
 }
+
 .header-burger-menu {
-  width: 28px;
-  height: 28px;
+  width: 21px;
+  height: 14px;
   stroke: var(--main-dark-text-color);
 }
 
@@ -102,12 +108,8 @@
     height: 32px;
   }
   .header-burger-menu {
-    width: 32px;
-    height: 32px;
-  }
-  .butto-open-mobile {
-    width: 32px;
-    max-height: 32px;
+    width: 24px;
+    height: 16px;
   }
 }
 
@@ -118,7 +120,7 @@
     padding-bottom: 32px;
   }
   .header-logo {
-    width: 28px;
+    width: 24px;
     max-height: 24px;
   }
   .button-open-mobile {
