@@ -1,14 +1,14 @@
+.footer-section {background-color: var(--secondary-bg-color);}
 .footer-con {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: var(--secondary-bg-color);
 }
 .footer-call {
   width: 300px;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17em;
   letter-spacing: -0.02em;
   color: var(--accent-text-color);
   margin-bottom: 32px;
@@ -18,7 +18,7 @@
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17em;
   letter-spacing: -0.02em;
   color: var(--main-light-text-color);
 }
@@ -44,7 +44,7 @@
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.28em;
   text-align: center;
   letter-spacing: -0.02em;
   color: var(--main-light-text-color);
@@ -57,7 +57,7 @@
   margin-bottom: 14px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29em;
 }
 
 .footer-soc {
@@ -68,7 +68,6 @@
 .footer-soc-icon {
   height: 22px;
   transition: var(--transition-dur-and-func);
-  outline: none;
 }
 .soc-icon {
   fill: transparent;
@@ -90,6 +89,7 @@
   stroke: var(--hover-icons-color);
   outline: var(--hover-icons-color);
 }
+
 .footer-contact-item:focus {
   color: var(--hover-icons-color);
   outline: none;
@@ -116,7 +116,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14em;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
@@ -143,11 +143,11 @@
   .footer-call {
     font-weight: 500;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21em;
   }
   .footer-call-rest {
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21em;
     letter-spacing: -0.02em;
   }
 
@@ -209,15 +209,15 @@
 @media screen and (min-width: 1200px) {
   .footer-call {
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21em;
     letter-spacing: -0.02em;
   }
   .footer-call-rest {
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21em;
     letter-spacing: -0.02em;
   }
   .footer-up-part {
-    margin-bottom: 62px;
+    margin-bottom: 58px;
   }
 }
