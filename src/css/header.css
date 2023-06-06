@@ -25,7 +25,6 @@
   max-height: 24px;
 }
 
-
 .header-icon-link:hover .header-icon-messeng,
 .header-icon-link:focus .header-icon-messeng {
   stroke: var(--accent-text-color);
@@ -54,7 +53,6 @@
 }
 /* link */
 .header-link {
-  font-style: italic;
   display: flex;
   align-items: center;
   column-gap: 7px;
