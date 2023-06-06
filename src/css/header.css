@@ -24,14 +24,16 @@
   width: 24px;
   max-height: 24px;
 }
-.header-icon-messeng:hover,
-.header-icon-messeng:focus {
+
+
+.header-icon-link:hover .header-icon-messeng,
+.header-icon-link:focus .header-icon-messeng {
   stroke: var(--accent-text-color);
-  transition: var(--transition-dur-and-func);
+  transition: stroke var(--transition-dur-and-func);
 }
 .header-burger-menu {
-  width: 28px;
-  height: 28px;
+  width: 21px;
+  height: 21px;
   stroke: var(--main-dark-text-color);
 }
 .button-open-mobile {
@@ -40,7 +42,6 @@
   background-color: transparent;
   padding: 0;
   width: 28px;
-  max-height: 28px;
 }
 /* desktop list heder */
 .header-nav {
@@ -100,12 +101,8 @@
     height: 32px;
   }
   .header-burger-menu {
-    width: 32px;
-    height: 32px;
-  }
-  .butto-open-mobile {
-    width: 32px;
-    max-height: 32px;
+    width: 24px;
+    height: 24px;
   }
 }
 /* Desktop */

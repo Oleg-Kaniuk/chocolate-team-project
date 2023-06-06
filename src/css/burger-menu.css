@@ -14,7 +14,7 @@
   transform: translateX(100%);
   transition: var(--transition-dur-and-func);
 }
-.modal-mobile-menu.is-hidden {
+.modal-mobile-menu.is-hidden-burger {
   transform: translateX(0);
 }
 /* close button */
@@ -83,8 +83,8 @@
   stroke: var(--main-light-text-color);
   fill: transparent;
 }
-.mobile-menu-icon-svg:focus,
-.mobile-menu-icon-svg:hover {
+.mobile-menu-icon-messeg:hover .mobile-menu-icon-svg,
+.mobile-menu-icon-messeg:focus .mobile-menu-icon-svg {
   stroke: var(--accent-text-color);
   transition: var(--transition-dur-and-func);
   outline: none;
