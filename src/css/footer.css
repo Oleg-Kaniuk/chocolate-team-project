@@ -75,7 +75,7 @@
   width: 22px;
   height: 22px;
 }
-.soc-icon:hover {
+.footer-soc-icon:hover .soc-icon {
   stroke: var(--hover-icons-color);
 }
 .footer-contact-item:hover {
@@ -85,18 +85,15 @@
   color: var(--hover-icons-color);
 }
 
-.soc-icon:focus {
+.footer-soc-icon:focus .soc-icon {
   stroke: var(--hover-icons-color);
-  outline: var(--hover-icons-color);
 }
 
 .footer-contact-item:focus {
   color: var(--hover-icons-color);
-  outline: none;
 }
 .footer-link-menu:focus {
   color: var(--hover-icons-color);
-  outline: none;
 }
 
 .footer-up-part::after {
