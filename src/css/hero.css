@@ -124,6 +124,7 @@
     line-height: 1.21;
     padding: 7px 14px;
     height: 41px;
+    width: 159px;
     color: var(--main-light-text-color);
     border: 1px solid var(--main-light-text-color);
     border-radius: 100px;
@@ -131,13 +132,14 @@
 
 @media only screen and (min-width: 375px) {
     .hero-made-btn {
-        padding: 11px 28px;
+        padding: 11px 24px;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .hero-made-btn {
         padding: 14px 40px;
+        max-width: 159px;
     }
 }
 
