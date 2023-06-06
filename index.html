@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-ed1c01c6.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-99f11513.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-6b035ac0.css">
 </head>
 
 <body>
@@ -150,13 +150,13 @@
 
   <main>
     <section class="section hero-section">
-    <div class="container">
+    <div class="container hero-container">
         <h1 class="visually-hidden">Delicious Chocolate</h1>
         <h2 class="hero-title">Treat yourself or a loved one to <span class="hero-title-part">our finest ingredients for a moment</span> of pure delight!</h2>
 
         <div class="hero-buttons">
             <div>
-                <button type="button" class="modal-btn hero-modal-btn" js-open-modal>Buy now</button>
+                <button type="button" class="modal-btn hero-modal-btn js-open-modal" data-modal="modal-buy">Buy now</button>
                 <a href="#made" class="link hero-made-btn">How it’s made</a>
             </div>
             <div class="scroll-down">
@@ -168,10 +168,10 @@
                     <svg class="scroll-icon-large" width="7" height="13">
                       <use href="../img/choco-icons.svg#icon-vector"></use>
                     </svg>
+
                 </a>
             </div>
         </div>
-
     </div>
 </section>
     <section class="advantages-section section">
@@ -793,31 +793,32 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
-  <div class="is-hidden review-modal" data-modal-review>
-    <button type="button" class="review-modal-close-btn" data-modal-close-review>
-        <svg class="review-modal-close-icon" width="28" height="28">
-            <use href="../img/choco-icons.svg#icon-x-close-small"></use>
-        </svg>
-    </button>
+  <div class="explore-backdrop is-hidden" data-modal-review>
+    <div class="review-modal ">
+        <button type="button" class="review-modal-close-btn" data-modal-close-review>
+            <svg class="review-modal-close-icon" width="28" height="28">
+                <use href="../img/choco-icons.svg#icon-x-close-small"></use>
+            </svg>
+        </button>
 
-    <h2 class="section-title reveiew-modal-title">
-        leave a review <span class="modal-text-part">about <span class="review-title-part">our chocolate</span></span>
-    </h2>
-    <form class="leave-review-form">
-        <input class="input-field" name="user_name" type="text" placeholder="Name" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
-        <input class="input-field" name="user_e-mail" type="email" placeholder="Email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
-        <div class="phone-part">
-            <input class="input-field phone-input" name="user_phone_number" type="number" placeholder="Phone number" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="9">
+        <h2 class="section-title reveiew-modal-title">
+            leave a review <span class="modal-text-part">about <span class="review-title-part">our chocolate</span></span>
+        </h2>
+        <form class="leave-review-form">
+            <input class="input-field" name="user_name" type="text" placeholder="Name" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+            <input class="input-field" name="user_e-mail" type="email" placeholder="Email" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="2">
+            <div class="phone-part">
+                <input class="input-field phone-input" name="user_phone_number" type="number" placeholder="Phone number" required pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$" minlength="9">
 
-            <div class="flag-img-part">
-                <img class="flag-img" src="../img/ukraine.svg" alt="flag">
-                <span class="ukr-numb">+380</span>
+                <div class="flag-img-part">
+                    <img class="flag-img" src="../img/ukraine.svg" alt="flag">
+                    <span class="ukr-numb">+380</span>
+                </div>
             </div>
-        </div>
-        <textarea class="input-text-area" name="text_input" placeholder="Enter text"></textarea>
-        <button type="submit" class="modal-btn leave-review-modal-btn">Send</button>
-    </form>
-
+            <textarea class="input-text-area" name="text_input" placeholder="Enter text"></textarea>
+            <button type="submit" class="modal-btn leave-review-modal-btn">Send</button>
+        </form>
+    </div>
 </div>
   <div class="explore-backdrop is-hidden" data-modal-explore>
   <div class="explore-modal">
