@@ -1,5 +1,22 @@
+.buy-now-conteiner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2e2f42cc;
+  width: 100vw;
+  height: 100vh;
+  z-index: 300;
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+}
+.buy-now-conteiner.active {
+  display: block;
+}
 .buy-now-modal {
+  width: 311px;
   height: 95vh;
+  top: 2%;
   position: relative;
   overflow-y: auto;
   padding: 32px 24px;
@@ -8,7 +25,6 @@
   border-radius: 15px;
   background-color: var(--primary-bg-color);
 }
-
 .buy-now-btn-close {
   position: absolute;
   top: 14px;
@@ -237,22 +253,12 @@
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
 }
-.js-overlay-modal {
+.buy-now-conteiner {
   display: none;
 }
-.js-overlay-modal.active {
-  display: block;
-  position: fixed;
-  width: 312px;
-  top: 50%;
-  left: 50%;
-  z-index: 300;
-  transform: translate(-50%, -50%);
-  transition: opacity var(--transition-dur-and-func),
-    visibility var(--transition-dur-and-func);
-}
+
 @media only screen and (min-width: 768px) {
-  .js-overlay-modal.active {
+  .buy-now-modal {
     width: 609px;
   }
   .buy-now-modal {
