@@ -21,6 +21,7 @@ var swiper = new Swiper(`.reviews-cards`, {
 		},
 		768: {
 			slidesPerView: 2,
+			spaceBetween: 16,
 		},
 		1200: {
 			slidesPerView: 3,
