@@ -8,7 +8,7 @@
   background-color: rgba(46, 47, 66, 0.8);
   transition: opacity var(--transition-dur-and-func); 
 }
-.is-hidden {
+.explore-modal-is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -123,6 +123,8 @@ stroke: var(--main-light-text-color);
  width: 263px;
  height: 45px; 
  padding: 14px 18px;
+ outline: transparent;
+ outline-offset: 0;
  border: 1.5px solid rgba(17, 17, 17, 0.05);
 filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
 border-radius: 25px;
@@ -140,7 +142,6 @@ top: 0;
 .explore-input:focus {
  border-color: var(--primary-accent-color);
 }
-
 .explore-modal-button {
 border: none;
 border-radius: 100px;
@@ -150,8 +151,8 @@ height: 45px;
 justify-content: center;
 align-items: center;
 padding: 14px 22px;
-right: 25px;
-bottom: 33px;
+right: 24px;
+bottom: 32px;
 transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
 }
 .explore-modal-button:hover,
