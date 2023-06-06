@@ -1,19 +1,18 @@
 .advantages-section {
   background-color: var(--secondary-bg-color);
-  padding-bottom: 0;
   max-width: none;
-}
-
-.advantages-container {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+
 @media only screen and (min-width: 768px) {
-  .advantages-container {
+  .advantages-section {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .advantages-container {
     padding-right: 50px;
