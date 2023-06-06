@@ -142,8 +142,7 @@
   /*  Регулюємо розмір постера  */
   background-size: cover;
 }
-.plyr__control {
-}
+
 .plyr__control--overlaid {
   /*  Встановлюємо стилі для кнопки play  */
   --plyr-control-spacing: 5px;
