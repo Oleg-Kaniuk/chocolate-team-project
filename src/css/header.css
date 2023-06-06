@@ -31,14 +31,15 @@
   transition: stroke var(--transition-dur-and-func);
 }
 
-.header-icon-link:hover,
-.header-icon-link:focus {
+.header-icon-link:hover .header-icon-messeng,
+.header-icon-link:focus .header-icon-messeng {
   stroke: var(--accent-text-color);
+  transition: stroke var(--transition-dur-and-func);
 }
 
 .header-burger-menu {
   width: 21px;
-  height: 14px;
+  height: 21px;
   stroke: var(--main-dark-text-color);
 }
 
@@ -48,7 +49,6 @@
   background-color: transparent;
   padding: 0;
   width: 28px;
-  max-height: 28px;
 }
 
 /* desktop list heder */
@@ -109,7 +109,7 @@
   }
   .header-burger-menu {
     width: 24px;
-    height: 16px;
+    height: 24px;
   }
 }
 

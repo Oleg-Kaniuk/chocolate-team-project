@@ -20,10 +20,14 @@
   position: relative;
   overflow-y: auto;
   padding: 32px 24px;
-  margin-left: auto;
-  margin-right: auto;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
   border-radius: 15px;
   background-color: var(--primary-bg-color);
+}
+.buy-now-modal::-webkit-scrollbar {
+ width: 0px;
 }
 .buy-now-btn-close {
   position: absolute;
