@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-1347eafc.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-db9bc6aa.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-99f11513.css">
 </head>
 
 <body>
@@ -837,29 +837,21 @@
       Explore our<br />
       <span class="title-accent">new chocolate</span> first!
     </h2>
-    <form
-      class="explore-modal-form"
-      name="explore-modal-form"
-      autocomplete="on"
-      novalidate
-    >
+    <form class="explore-modal-form" name="explore-modal-form">
       <label class="explore-label">
         <input
           class="explore-input"
-          name="user_e-mail"
+          name="user_email"
           type="email"
           placeholder="Enter your email"
-          required
-          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          required=""
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           minlength="2"
+          title="mail@mail.com"
         />
       </label>
 
-      <button
-        class="explore-modal-button modal-btn"
-        type="submit"
-        data-modal-close-explore
-      >
+      <button class="explore-modal-button modal-btn" type="submit">
         <span class="explore-primary-span">Submit</span>
         <span class="explore-secondary-span">Subscribe</span>
       </button>
