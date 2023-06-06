@@ -8,7 +8,7 @@
   background-color: rgba(46, 47, 66, 0.8);
   transition: opacity var(--transition-dur-and-func); 
 }
-.explore-modal-is-hidden {
+.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
