@@ -1,8 +1,9 @@
-.footer-section {background-color: var(--secondary-bg-color);}
-.footer-con {
+.footer-section {
+  background-color: var(--secondary-bg-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .footer-call {
   width: 300px;
   font-family: var(--primary-font);
@@ -132,7 +133,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer-con {
+  .footer-section {
     padding-top: 50px;
     padding-bottom: 50px;
   }
