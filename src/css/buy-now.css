@@ -27,7 +27,7 @@
   background-color: var(--primary-bg-color);
 }
 .buy-now-modal::-webkit-scrollbar {
- width: 0px;
+  width: 0px;
 }
 .buy-now-btn-close {
   position: absolute;
@@ -121,7 +121,6 @@
 /* ========== FORM ========== */
 .buy-now-label {
   display: block;
-  margin-bottom: 18px;
 }
 
 .buy-now-label-title {
@@ -156,7 +155,9 @@
   gap: 14px;
   flex-wrap: wrap;
 }
-
+.buy-now-indent {
+  margin-bottom: 18px;
+}
 .buy-now-label-input::placeholder {
   font-weight: 400;
   color: rgba(64, 64, 64, 0.3);
