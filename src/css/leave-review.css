@@ -48,24 +48,28 @@
     padding: 0;
     top: 14px;
     right: 14px;
-    top: 14px;
-    right: 14px;
     width: 24px;
     height: 24px;
     border: none;
-    background-color: var(--additional-bg-color);
-    stroke: black;
     background-color: var(--additional-bg-color);
     stroke: black;
     border-radius: 50%;
     transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
 
+@media only screen and (min-width: 768px) {
+    .review-modal-close-btn {
+        top: 24px;
+        right: 24px;
+        width: 28px;
+        height: 28px;
+    }
+}
+
 .review-modal-close-btn:hover,
 .review-modal-close-btn:focus {
     background-color: var(--secondary-accent-color);
     border: none;
-    stroke: var(--accent-text-color);
     stroke: var(--accent-text-color);
 }
 
@@ -144,7 +148,7 @@
     box-shadow: 1.5px 0px 0px 0px rgba(0, 0, 0, 0.1);
     top: 30%;
     gap: 8px;
-    padding-left: 18px;
+    margin-left: 18px;
     padding-right: 8px;
     border-top: none;
     border-bottom: none;

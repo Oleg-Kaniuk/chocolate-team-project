@@ -59,7 +59,7 @@
 }
 /* Буллєти */
 
-.reviews-cards.swiper-pagination-bullet {
+.reviews-cards .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   line-height: 13px;
