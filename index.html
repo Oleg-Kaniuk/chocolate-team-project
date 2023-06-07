@@ -13,8 +13,8 @@
   <!-- slider -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   
-  <script type="module" crossorigin src="/chocolate-team-project/assets/index-f7067818.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-8310800f.css">
+  <script type="module" crossorigin src="/chocolate-team-project/assets/index-89f86af5.js"></script>
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-862f01bd.css">
 </head>
 
 <body>
@@ -363,12 +363,41 @@
     <h2 class="section-title made-title">
       How it’s <span class="title-accent">made?</span>
     </h2>
-    <div class="made-flex">
-      <div class="features-video plyr__video-embed made-blok-video" id="features-player"
-        data-poster="/chocolate-team-project/assets/chocolate@1x-32889dbb.jpg">
+
+      <div
+        class="features-video plyr__video-embed made-blok-video"
+        id="features-player"
+        data-poster="/img/how_its_made/cover-mobile@1x.jpg"
+      >
         <iframe
           src="https://www.youtube.com/embed/2H0tglcIKsM?autoplay=0&modestbranding=1&controls=0&disablekb=1&playsinline=1&cc_load_policy=1&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fplyr.io%2F%23youtube&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fplyr.io&widgetid=1"
-          allowfullscreen allow="autoplay"></iframe>
+          allowfullscreen
+          allow="autoplay"
+        ></iframe>
+      </div>
+
+      <div class="made-blok-img">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/chocolate-team-project/assets/cover@1x-e39e866f.jpg 1x, /chocolate-team-project/assets/cover@2x-0e6ae507.jpg 2x"
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="/chocolate-team-project/assets/cover-tablet@1x-ef60b722.jpg 1x, /chocolate-team-project/assets/cover-tablet@2x-f5755361.jpg 2x"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="/chocolate-team-project/assets/cover-mobile@1x-dba8af4b.jpg 1x, /chocolate-team-project/assets/cover-mobile@2x-a2c3768a.jpg 2x"
+          />
+          <img
+            class="made-img"
+            src="/chocolate-team-project/assets/cover-mobile@1x-dba8af4b.jpg"
+            alt="melted chocolate in a bowl"
+          />
+        </picture>
       </div>
 
       <div class="made-blok">
@@ -399,6 +428,7 @@
     </div>
   </div>
 </section>
+
     <section class="section products" id="products">
   <div class="container">
     <h2 class="products-title section-title">Our <span>Products</span></h2>
