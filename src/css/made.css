@@ -166,11 +166,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   /*  якщо z index залишити так тимчасово */
 }
 
 .made-img {
   border-radius: 15px;
   background-size: cover;
+}
+.plyr__control--overlaid {
+  z-index: 3;
 }
