@@ -1,197 +1,226 @@
 .hero-section {
-    padding-bottom: 72px;
-    padding-top: 62px;
+  padding-bottom: 72px;
+  padding-top: 62px;
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-section {
-        padding-bottom: 50px;
-        padding-top: 80px;
-    }
+  .hero-section {
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
 }
 
-@media only screen and (min-width:1200px) {
-    .hero-section {
-        padding-top: 80px;
-        padding-bottom: 72px;
-    }
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 72px;
+  }
 }
 
 .hero-container {
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-mobile@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 335px;
-    padding-top: 395px;
-    padding-bottom: 20px;
-    border-radius: 30px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(/img/hero/chocolate-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 335px;
+  padding-top: 395px;
+  padding-bottom: 20px;
+  border-radius: 30px;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero-container {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-mobile@2x.jpg);
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/chocolate-mobile@2x.webp);
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-container {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-tablet@1x.jpg);
-        padding-top: 671px;
-        padding-bottom: 40px;
-        max-width: 704px;
-    }
-    @media (min-device-pixel-ratio: 2),
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/chocolate-tablet@1x.webp);
+    padding-top: 671px;
+    padding-bottom: 40px;
+    max-width: 704px;
+  }
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero-container {
-            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-tablet@2x.jpg);
-        }
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(/img/hero/chocolate-tablet@2x.webp);
     }
+  }
 }
 
-@media only screen and (min-width:1200px) {
-    .hero-container {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate@1x.jpg);
-        padding-top: 381px;
-        padding-bottom: 40px;
-        max-width: 1136px;
-    }
-    @media (min-device-pixel-ratio: 2),
+@media only screen and (min-width: 1200px) {
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/chocolate@1x.webp);
+    padding-top: 381px;
+    padding-bottom: 40px;
+    max-width: 1136px;
+  }
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero-container {
-            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate@2x.jpg);
-        }
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(/img/hero/chocolate@2x.webp);
     }
+  }
 }
 
 @media only screen and (max-width: 374px) {
-    .hero-title {
-        font-size: 16px;
-        margin-bottom: 28px;
-    }
+  .hero-title {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
 }
 
-@media only screen and (min-width: 375px) and (max-width:767px) {
-    .hero-title {
-        font-size: 20px;
-        line-height: 1.2;
-        width: 290px;
-        margin-bottom: 32px;
-    }
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .hero-title {
+    font-size: 20px;
+    line-height: 1.2;
+    width: 290px;
+    margin-bottom: 32px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-title {
-        width: 484px;
-        margin-bottom: 32px;
-        font-size: 28px;
-        line-height: 1.21;
-    }
+  .hero-title {
+    width: 484px;
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
 }
 
 .hero-modal-btn {
-    padding: 8px 16px;
-    margin-right: 14px;
-    border-radius: 100px;
-    border: none;
+  padding: 8px 16px;
+  margin-right: 14px;
+  border-radius: 100px;
+  border: none;
 }
 
 @media only screen and (min-width: 375px) {
-    .hero-modal-btn {
-        padding: 12px 28px;
-    }
+  .hero-modal-btn {
+    padding: 12px 28px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-modal-btn {
-        padding: 14px 40px;
-    }
+  .hero-modal-btn {
+    padding: 14px 40px;
+  }
 }
 
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-    background-color: var(--secondary-accent-color);
-    color: var(--reserve-bg-color);
+  background-color: var(--secondary-accent-color);
+  color: var(--reserve-bg-color);
 }
 
 .hero-made-btn {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    padding: 7px 14px;
-    height: 41px;
-    width: 159px;
-    color: var(--main-light-text-color);
-    border: 1px solid var(--main-light-text-color);
-    border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  padding: 7px 14px;
+  height: 41px;
+  width: 159px;
+  color: var(--main-light-text-color);
+  border: 1px solid var(--main-light-text-color);
+  border-radius: 100px;
 }
 
 @media only screen and (min-width: 375px) {
-    .hero-made-btn {
-        padding: 11px 24px;
-    }
+  .hero-made-btn {
+    padding: 11px 24px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-made-btn {
-        padding: 14px 40px;
-        max-width: 159px;
-    }
+  .hero-made-btn {
+    padding: 14px 40px;
+    max-width: 159px;
+  }
 }
 
 .hero-made-btn:hover,
 .hero-made-btn:focus {
-    border-color: var(--reserve-bg-color);
-    color: var(--accent-text-color);
+  border-color: var(--reserve-bg-color);
+  color: var(--accent-text-color);
 }
 
 .scroll-icon-small {
-    background-color: var(--additional-bg-color);
-    fill: var(--accent-text-color);
-    border-radius: 50%;
-    padding: 10px;
-    width: 28px;
-    height: 28px;
+  background-color: var(--additional-bg-color);
+  fill: var(--accent-text-color);
+  border-radius: 50%;
+  padding: 10px;
+  width: 28px;
+  height: 28px;
 }
 
 @media only screen and (min-width: 768px) {
-    .scroll-icon-small {
-        display: none;
-    }
+  .scroll-icon-small {
+    display: none;
+  }
 }
 
 .scroll-icon-small:hover,
 .scroll-icon-small:focus {
-    background-color: var(--accent-text-color);
-    stroke: var(--additional-bg-color);
+  background-color: var(--accent-text-color);
+  stroke: var(--additional-bg-color);
 }
 
 .scroll-icon-large:hover,
 .scroll-icon-large:focus {
-    background-color: var(--accent-text-color);
-    stroke: var(--additional-bg-color);
+  background-color: var(--accent-text-color);
+  stroke: var(--additional-bg-color);
 }
 
 .scroll-icon-large {
-    display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
-    .scroll-icon-large {
-        width: 38px;
-        height: 38px;
-        padding: 13px;
-        display: block;
-        border-radius: 50%;
-        background-color: var(--additional-bg-color);
-        fill: var(--accent-text-color);
-    }
+  .scroll-icon-large {
+    width: 38px;
+    height: 38px;
+    padding: 13px;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--additional-bg-color);
+    fill: var(--accent-text-color);
+  }
 }
-
 
 /* .scroll-down-link:hover,
 .scroll-down-link:focus {
@@ -200,62 +229,62 @@
 } */
 
 .scroll-down-text {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: -0.03em;
-    color: var(--main-light-text-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  color: var(--main-light-text-color);
 }
 
 @media only screen and (min-width: 768px) {
-    .scroll-down-text {
-        font-size: 14px;
-        line-height: 1.28;
-    }
+  .scroll-down-text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .scroll-down-text:hover,
 .scroll-down-text:focus {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 @media only screen and (max-width: 767px) {
-    .scroll-down-link {
-        width: 107px;
-        margin-top: 39px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
+  .scroll-down-link {
+    width: 107px;
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .scroll-down-link {
-        display: flex;
-        align-items: center;
-        width: 130px;
-        gap: 14px;
-        margin-left: auto;
-    }
+  .scroll-down-link {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    gap: 14px;
+    margin-left: auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .scroll-down {
-        display: block;
-        margin-left: auto;
-    }
+  .scroll-down {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-buttons {
-        display: flex;
-        align-items: center;
-    }
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-title-part {
-        white-space: nowrap;
-        display: inline;
-    }
+  .hero-title-part {
+    white-space: nowrap;
+    display: inline;
+  }
 }
