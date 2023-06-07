@@ -171,6 +171,8 @@
 }
 
 .made-img {
+  display: none;
+
   border-radius: 15px;
   background-size: cover;
 }
