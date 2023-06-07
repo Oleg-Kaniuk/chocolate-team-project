@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   
   <script type="module" crossorigin src="/chocolate-team-project/assets/index-89f86af5.js"></script>
-  <link rel="stylesheet" href="/chocolate-team-project/assets/index-8bbbb497.css">
+  <link rel="stylesheet" href="/chocolate-team-project/assets/index-25f08cab.css">
 </head>
 
 <body>
@@ -677,7 +677,7 @@
         <div class="buy-now-thumb">
           <div class="buy-now-wrapper">
             <picture>
-              <img src="/chocolate-team-project/assets/buy@1x-9145e5eb.png" alt="pieces of chocolate">
+              <img src="/chocolate-team-project/assets/buy@1x-9145e5eb.png" alt="pieces of chocolate" />
             </picture>
           </div>
           <button class="button buy-now-btn" type="button">100 g</button>
@@ -687,7 +687,10 @@
         <div class="buy-now-thumb">
           <div class="buy-now-wrapper">
             <picture>
-              <img src="/chocolate-team-project/assets/buy_two@1x-bac61d82.png" alt="pieces of chocolate">
+              <img
+                src="/chocolate-team-project/assets/buy_two@1x-bac61d82.png"
+                alt="pieces of chocolate"
+              />
             </picture>
           </div>
           <button class="button buy-now-btn" type="button">200 g</button>
@@ -697,7 +700,10 @@
         <div class="buy-now-thumb">
           <div class="buy-now-wrapper">
             <picture>
-              <img src="/chocolate-team-project/assets/buy_three@1x-396be75b.png" alt="pieces of chocolate">
+              <img
+                src="/chocolate-team-project/assets/buy_three@1x-396be75b.png"
+                alt="pieces of chocolate"
+              />
             </picture>
           </div>
           <button class="button buy-now-btn" type="button">300 g</button>
@@ -705,52 +711,114 @@
       </li>
     </ul>
     <form class="buy-now-modal-form">
-      <label class="buy-now-label">
-        <span class="buy-now-label-title label-input-text">Personal information</span>
-        <div class="buy-now-input-wrapper">
-          <input type="text" name="username" required class="buy-now-label-input placeholder-text" placeholder="Name"
-            pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$" minlength="2">
-          <input type="text" name="user_surname" required class="buy-now-label-input placeholder-text"
-            placeholder="Surname" pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$" minlength="2">
-        </div>
+      <label for="buy-username" class="buy-now-label">
+        <span class="buy-now-label-title label-input-text"
+          >Personal information</span
+        >
       </label>
-      <label class="buy-now-label">
+      <div class="buy-now-input-wrapper buy-now-indent">
+        <input
+          id="buy-username"
+          type="text"
+          name="username"
+          required
+          class="buy-now-label-input placeholder-text"
+          placeholder="Name"
+          pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
+        <input
+          type="text"
+          name="user_surname"
+          id="input2"
+          required
+          class="buy-now-label-input placeholder-text"
+          placeholder="Surname"
+          pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
+      </div>
+
+      <label for="buy-user-email" class="buy-now-label">
         <span class="buy-now-label-title label-input-text">Email</span>
-        <input type="email" name="user_email" required class="buy-now-label-input placeholder-text"
-          placeholder="Enter your email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="mail@mail.com">
       </label>
-      <label class="buy-now-label">
+      <input
+        type="email"
+        id="buy-user-email"
+        name="user_email"
+        required
+        class="buy-now-label-input buy-now-indent placeholder-text"
+        placeholder="Enter your email"
+        pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        title="mail@mail.com"
+      />
+
+      <label for="buy-user-phone" class="buy-now-label">
         <span class="buy-now-label-title label-input-text">Phone number</span>
-        <div class="buy-now-phone-wrapper">
-          <input type="tel" name="user-phone" required pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
-            title="xx-xxx-xx-xx" class="buy-now-label-input placeholder-text" placeholder="Phone number">
-          <div class="buy-now-icon-flag">
-            <img class="buy-now-img-flag" src="/chocolate-team-project/assets/ukraine-087c01d9.svg" alt="ukraine">
-            <span class="buy-now-label-phone input-text">+380</span>
-          </div>
-        </div>
       </label>
-      <label class="buy-now-label">
+      <div class="buy-now-phone-wrapper buy-now-indent">
+        <input
+          type="tel"
+          name="user-phone"
+          id="buy-user-phone"
+          required
+          pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+          title="xx-xxx-xx-xx"
+          class="buy-now-label-input placeholder-text"
+          placeholder="Phone number"
+        />
+        <div class="buy-now-icon-flag">
+          <img class="buy-now-img-flag" src="/chocolate-team-project/assets/ukraine-087c01d9.svg" alt="ukraine" />
+          <span class="buy-now-label-phone input-text">+380</span>
+        </div>
+      </div>
+
+      <label for="buy-user-card" class="buy-now-label">
         <span class="buy-now-label-title label-input-text">Card number</span>
-        <div class="buy-now-card-wrapper">
-          <input type="tel" name="user-card" pattern="^[0-9]{12}" required title="xxxx xxxx xxxx xxxx"
-            class="buy-now-label-input placeholder-text" placeholder="Enter card">
-          <div>
-            <img class="buy-now-icon-card" src="/chocolate-team-project/assets/mastercard-b4c79b62.svg" alt="mastercard" width="44" height="30">
-          </div>
+      </label>
+      <div class="buy-now-card-wrapper buy-now-indent">
+        <input
+          type="tel"
+          name="user-card"
+          id="buy-user-card"
+          pattern="^[0-9]{12}"
+          required
+          title="xxxx xxxx xxxx xxxx"
+          class="buy-now-label-input placeholder-text"
+          placeholder="Enter card"
+        />
+        <div>
+          <img
+            class="buy-now-icon-card"
+            src="/chocolate-team-project/assets/mastercard-b4c79b62.svg"
+            alt="mastercard"
+            width="44"
+            height="30"
+          />
         </div>
-      </label>
-      <label class="buy-now-label">
+      </div>
+
+      <label for="buy-user-comments" class="buy-now-label">
         <span class="buy-now-label-title label-input-text">Comment</span>
-        <textarea name="user_message" placeholder="Enter text" class="buy-now-message input-text"></textarea>
       </label>
-      <button class="button buy-now-btn-submit modal-btn js-modal-close" type="submit">
+      <textarea
+        name="user_message"
+        id="buy-user-comments"
+        placeholder="Enter text"
+        class="buy-now-message buy-now-indent input-text"
+      ></textarea>
+
+      <button
+        class="button buy-now-btn-submit modal-btn js-modal-close"
+        type="submit"
+      >
         Submit
       </button>
     </form>
   </div>
 </div>
 <div class="overlay js-overlay-modal"></div>
+
   <div class="explore-backdrop is-hidden" data-modal-review>
     <div class="review-modal ">
         <button type="button" class="review-modal-close-btn" data-modal-close-review>
