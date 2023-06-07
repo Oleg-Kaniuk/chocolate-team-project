@@ -1,125 +1,153 @@
 .subscribe-section {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .subscribe-container {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-mobile@1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 62px;
-    padding-bottom: 63px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/subscribe/subcribe-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 62px;
+  padding-bottom: 63px;
 }
 
 @media only screen and (min-width: 320px) {
-    .subscribe-container {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(../img/subscribe/subcribe-mobile@1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+  .subscribe-container {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe/subcribe-mobile@1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .subscribe-container {
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                url(../img/subscribe/subcribe-mobile@2x.jpg);
-        }
+    .subscribe-container {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe/subcribe-mobile@2x.webp);
     }
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .subscribe-container {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-tablet@1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 72px;
-        padding-bottom: 72px;
-    }
+  .subscribe-container {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe/subcribe-tablet@1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .subscribe-container {
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                url(../img/subscribe/subcribe-tablet@2x.jpg);
-        }
+    .subscribe-container {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe/subcribe-tablet@2x.webp);
     }
+  }
 }
 
-
 @media only screen and (min-width: 1200px) {
-    .subscribe-container {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe@1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  .subscribe-container {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe/subcribe@1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .subscribe-container {
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                url(../img/subscribe/subcribe@2x.jpg)
-        }
+    .subscribe-container {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe/subcribe@2x.webp);
     }
+  }
 }
 
 .subscribe-title {
-    color: var(--main-light-text-color);
-    margin-bottom: 24px;
+  color: var(--main-light-text-color);
+  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
-    .subscribe-title {
-        font-size: 24px;
-        line-height: 1.17;
-    }
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
-
 .subscribe-subtitle {
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: var(--main-light-text-color);
-    margin-bottom: 24px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main-light-text-color);
+  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 320px) {
-    .subscribe-subtitle {
-        width: 326px;
-
-    }
+  .subscribe-subtitle {
+    width: 326px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .subscribe-subtitle {
-        width: 467px;
-        margin: 0 auto 24px;
-    }
+  .subscribe-subtitle {
+    width: 467px;
+    margin: 0 auto 24px;
+  }
 }
 
 .subscribe-btn {
-    display: flex;
-    margin: 0 auto;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 100px;
-    transition: var(--transition-dur-and-func);
+  display: flex;
+  margin: 0 auto;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 100px;
+  transition: var(--transition-dur-and-func);
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-    color: var(--reserve-bg-color);
-    background-color: var(--secondary-accent-color);
+  color: var(--reserve-bg-color);
+  background-color: var(--secondary-accent-color);
 }
 
 @media only screen and (min-width: 768px) {
-    .subscribe-btn {
-        font-size: 18px;
-        padding: 14px 40px;
-        line-height: 1.22;
-    }
+  .subscribe-btn {
+    font-size: 18px;
+    padding: 14px 40px;
+    line-height: 1.22;
+  }
 }
