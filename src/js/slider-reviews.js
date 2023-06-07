@@ -13,6 +13,7 @@ var swiper = new Swiper(`.reviews-cards`, {
 	lazy: {
 		loadPrevNext: true,
 	 },
+	 grabCursor: true,
 	 loop: true, 
 	
 	breakpoints:{
