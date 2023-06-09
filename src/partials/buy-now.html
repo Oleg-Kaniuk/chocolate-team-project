@@ -13,7 +13,28 @@
         <div class="buy-now-thumb">
           <div class="buy-now-wrapper">
             <picture>
-              <img src="/img/buy_now/buy@1x.webp" alt="pieces of chocolate">
+              <!-- dekstop-tablet -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../img/buy_now/buy@1x.webp 1x,
+                  /img/buy_now/buy@2x.webp   2x
+                "
+              />
+              <!-- mobile -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../img/buy_now/buy-mobile@1x.webp 1x,
+                  ../img/buy_now/buy-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="/img/buy_now/buy@1x.webp"
+                alt="pieces of chocolate"
+                width="120"
+                height="107"
+              />
             </picture>
           </div>
           <button class="button buy-now-btn" type="button">100 g</button>
@@ -23,7 +44,28 @@
         <div class="buy-now-thumb">
           <div class="buy-now-wrapper">
             <picture>
-              <img src="/img/buy_now/buy_two@1x.webp" alt="pieces of chocolate">
+              <!-- dekstop-tablet -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  /img/buy_now/buy_two@1x.webp 1x,
+                  /img/buy_now/buy_two@2x.webp 2x
+                "
+              />
+              <!-- mobile -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  /img/buy_now/buy_two-mobile@1x.webp 1x,
+                  /img/buy_now/buy_two-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="/img/buy_now/buy_two@1x.webp"
+                alt="pieces of chocolate"
+                width="120"
+                height="107"
+              />
             </picture>
           </div>
           <button class="button buy-now-btn" type="button">200 g</button>
@@ -33,7 +75,28 @@
         <div class="buy-now-thumb">
           <div class="buy-now-wrapper">
             <picture>
-              <img src="/img/buy_now/buy_three@1x.webp" alt="pieces of chocolate">
+              <!-- dekstop-tablet -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  /img/buy_now/buy_three@1x.webp 1x,
+                  /img/buy_now/buy_three@2x.webp 2x
+                "
+              />
+              <!-- mobile -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  /img/buy_now/buy_three-mobile@1x.webp 1x,
+                  /img/buy_now/buy_three-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="/img/buy_now/buy_three@1x.webp"
+                alt="pieces of chocolate"
+                width="120"
+                height="107"
+              />
             </picture>
           </div>
           <button class="button buy-now-btn" type="button">300 g</button>
@@ -42,30 +105,63 @@
     </ul>
     <form class="buy-now-modal-form">
       <label for="buy-username" class="buy-now-label">
-        <span class="buy-now-label-title label-input-text">Personal information</span>
+        <span class="buy-now-label-title label-input-text"
+          >Personal information</span
+        >
       </label>
       <div class="buy-now-input-wrapper buy-now-indent">
-        <input id="buy-username" type="text" name="username" required class="buy-now-label-input placeholder-text"
-          placeholder="Name" pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$" minlength="2">
-        <input type="text" name="user_surname" id="input2" required class="buy-now-label-input placeholder-text"
-          placeholder="Surname" pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$" minlength="2">
+        <input
+          id="buy-username"
+          type="text"
+          name="username"
+          required
+          class="buy-now-label-input placeholder-text"
+          placeholder="Name"
+          pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
+        <input
+          type="text"
+          name="user_surname"
+          id="input2"
+          required
+          class="buy-now-label-input placeholder-text"
+          placeholder="Surname"
+          pattern="^[a-zA-Za-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
       </div>
 
       <label for="buy-user-email" class="buy-now-label">
         <span class="buy-now-label-title label-input-text">Email</span>
       </label>
-      <input type="email" id="buy-user-email" name="user_email" required
-        class="buy-now-label-input buy-now-indent placeholder-text" placeholder="Enter your email"
-        pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="mail@mail.com">
+      <input
+        type="email"
+        id="buy-user-email"
+        name="user_email"
+        required
+        class="buy-now-label-input buy-now-indent placeholder-text"
+        placeholder="Enter your email"
+        pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        title="mail@mail.com"
+      />
 
       <label for="buy-user-phone" class="buy-now-label">
         <span class="buy-now-label-title label-input-text">Phone number</span>
       </label>
       <div class="buy-now-phone-wrapper buy-now-indent">
-        <input type="tel" name="user-phone" id="buy-user-phone" required pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
-          title="xx-xxx-xx-xx" class="buy-now-label-input placeholder-text" placeholder="Phone number">
+        <input
+          type="tel"
+          name="user-phone"
+          id="buy-user-phone"
+          required
+          pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+          title="xx-xxx-xx-xx"
+          class="buy-now-label-input placeholder-text"
+          placeholder="Phone number"
+        />
         <div class="buy-now-icon-flag">
-          <img class="buy-now-img-flag" src="/img/ukraine.svg" alt="ukraine">
+          <img class="buy-now-img-flag" src="/img/ukraine.svg" alt="ukraine" />
           <span class="buy-now-label-phone input-text">+380</span>
         </div>
       </div>
@@ -74,20 +170,41 @@
         <span class="buy-now-label-title label-input-text">Card number</span>
       </label>
       <div class="buy-now-card-wrapper buy-now-indent">
-        <input type="tel" name="user-card" id="buy-user-card" pattern="^[0-9]{12}" required title="xxxx xxxx xxxx xxxx"
-          class="buy-now-label-input placeholder-text" placeholder="Enter card">
+        <input
+          type="tel"
+          name="user-card"
+          id="buy-user-card"
+          pattern="^[0-9]{12}"
+          required
+          title="xxxx xxxx xxxx xxxx"
+          class="buy-now-label-input placeholder-text"
+          placeholder="Enter card"
+        />
         <div>
-          <img class="buy-now-icon-card" src="/img/mastercard.svg" alt="mastercard" width="44" height="30">
+          <img
+            class="buy-now-icon-card"
+            src="/img/mastercard.svg"
+            alt="mastercard"
+            width="44"
+            height="30"
+          />
         </div>
       </div>
 
       <label for="buy-user-comments" class="buy-now-label">
         <span class="buy-now-label-title label-input-text">Comment</span>
       </label>
-      <textarea name="user_message" id="buy-user-comments" placeholder="Enter text"
-        class="buy-now-message buy-now-indent input-text"></textarea>
+      <textarea
+        name="user_message"
+        id="buy-user-comments"
+        placeholder="Enter text"
+        class="buy-now-message buy-now-indent input-text"
+      ></textarea>
 
-      <button class="button buy-now-btn-submit modal-btn js-modal-close" type="submit">
+      <button
+        class="button buy-now-btn-submit modal-btn js-modal-close"
+        type="submit"
+      >
         Submit
       </button>
     </form>
