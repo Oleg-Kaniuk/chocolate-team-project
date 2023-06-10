@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       /* Назначаем каждой кнопке обработчик клика */
       item.addEventListener('click', function(e) {
-
+      document.body.classList.toggle("modal-open");
          /* Предотвращаем стандартное действие элемента. Так как кнопку разные
             люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
             Нужно подстраховаться. */
